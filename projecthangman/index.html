@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--  
+    Document Title
+    =============================================
+    -->
+    <title>Project Hangman</title>
+    <!--  
+    Favicons
+    =============================================
+    -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="../assets/images/favicons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="../assets/images/favicons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="../assets/images/favicons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../assets/images/favicons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="../assets/images/favicons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="../assets/images/favicons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="../assets/images/favicons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../assets/images/favicons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/images/favicons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../assets/images/favicons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../assets/images/favicons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../assets/images/favicons/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="assets/images/favicons/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Default stylesheets-->
+    <link
+      href="../assets/lib/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Template specific stylesheets-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Volkhov:400i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800"
+      rel="stylesheet"
+    />
+    <link href="../assets/lib/animate.css/animate.css" rel="stylesheet" />
+    <link href="../assets/lib/flexslider/flexslider.css" rel="stylesheet" />
+    <link
+      href="../assets/lib/magnific-popup/dist/magnific-popup.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/lib/simple-text-rotator/simpletextrotator.css"
+      rel="stylesheet"
+    />
+    <!-- Main stylesheet and color file-->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link
+      id="color-scheme"
+      href="../assets/css/colors/default.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!--JavaScripts-->
+    <script src="../assets/lib/jquery/dist/jquery.js"></script>
+    <script src="../assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../assets/lib/wow/dist/wow.js"></script>
+    <script src="../assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+    <script src="../assets/lib/isotope/dist/isotope.pkgd.js"></script>
+    <script src="../assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+    <script src="../assets/lib/flexslider/jquery.flexslider.js"></script>
+    <script src="../assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="../assets/lib/smoothscroll.js"></script>
+    <script src="../assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+    <script src="../assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
+    <script src="../assets/js/plugins.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </head>
+  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+    <main>
+      <div class="page-loader">
+        <div class="loader">Loading...</div>
+      </div>
+      <!-- NAV BAR -->
+      <nav
+        class="navbar navbar-custom navbar-transparent navbar-fixed-top one-page"
+        role="navigation"
+      >
+        <div
+          class="container"
+          style="width: 100%; padding-left: 50px; padding-right: 50px"
+        >
+          <div class="navbar-header">
+            <button
+              class="navbar-toggle"
+              type="button"
+              data-toggle="collapse"
+              data-target="#custom-collapse"
+            >
+              <span class="sr-only">Toggle navigation</span
+              ><span class="icon-bar"></span><span class="icon-bar"></span
+              ><span class="icon-bar"></span></button
+            ><a class="navbar-brand" href="/">Astur Climbing Tech</a>
+          </div>
+          <div class="collapse navbar-collapse" id="custom-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="section-scroll" href="/">Home</a></li>
+              <li><a class="section-scroll" href="#app">App Features</a></li>
+              <li>
+                <a class="section-scroll" href="#hardware">Hardware Features</a>
+              </li>
+              <li><a class="section-scroll" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- HERO SECTION -->
+      <section
+        class="home-section home-parallax home-fade home-full-height bg-dark-30"
+        id="home"
+        data-background="../assets/images/hero.webp"
+      >
+        <div class="caption">
+          <div class="caption-content">
+            <div class="font-alt mb-40 title-size-2">This is</div>
+            <div class="font-alt mb-40 title-size-4">Project Hangman</div>
+            <a class="section-scroll btn btn-border-w btn-round" href="#app"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <div class="main">
+        <!-- APP FEATURES  -->
+        <section class="module">
+          <div class="container">
+            <div class="row" id="app">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">App features</h2>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6 col-md-3 col-lg-3">
+                <div class="alt-features-item">
+                  <div class="alt-features-icon">
+                    <span class="fa-regular fa-calendar-days"></span>
+                  </div>
+                  <h3 class="alt-features-title font-alt">
+                    Track your progress
+                  </h3>
+                  Your tests and workouts are automatically added or do it
+                  manually for more details.
+                </div>
+
+                <div class="alt-features-item">
+                  <div class="alt-features-icon">
+                    <span class="fa-solid fa-chart-line"></span>
+                  </div>
+                  <h3 class="alt-features-title font-alt">
+                    Interactive Charts
+                  </h3>
+                  Click and drag on the chart to see each datapoint in detail,
+                  including value and timestamp.
+                </div>
+
+                <div class="alt-features-item">
+                  <div class="alt-features-icon">
+                    <span class="fa-solid fa-file-csv"></span>
+                  </div>
+                  <h3 class="alt-features-title font-alt">Raw Data</h3>
+                  If you want to process the data in your own way you can
+                  download the raw data in a CSV format.
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-6 hidden-xs hidden-sm">
+                <div class="post-images-slider">
+                  <ul class="slides">
+                    <li>
+                      <img
+                        loading="lazy"
+                        class="center-block"
+                        style="width: auto !important; height: 700px !important"
+                        src="../assets/images/screenshots/mainScreenshot.webp"
+                        alt="Slider Image"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        loading="lazy"
+                        class="center-block"
+                        style="width: auto !important; height: 700px !important"
+                        src="../assets/images/screenshots/screenshotTimer.webp"
+                        alt="Slider Image"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        loading="lazy"
+                        class="center-block"
+                        style="width: auto !important; height: 700px !important"
+                        src="../assets/images/screenshots/screenshotStats.webp"
+                        alt="Slider Image"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        loading="lazy"
+                        class="center-block"
+                        style="width: auto !important; height: 700px !important"
+                        src="../assets/images/screenshots/screenshotLog.webp"
+                        alt="Slider Image"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        loading="lazy"
+                        class="center-block"
+                        style="width: auto !important; height: 700px !important"
+                        src="../assets/images/screenshots/screenshotList.webp"
+                        alt="Slider Image"
+                      />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3 col-lg-3">
+                <div class="alt-features-item">
+                  <div class="alt-features-icon">
+                    <span class="fa-solid fa-plus"></span>
+                  </div>
+                  <h3 class="alt-features-title font-alt">Create your Own</h3>
+                  Create your own timers or climbing specific workouts with
+                  reminders for grip type and fingers.
+                </div>
+
+                <div class="alt-features-item">
+                  <div class="alt-features-icon">
+                    <span
+                      class="fa-solid fa-mobile-screen"
+                      style="position: relative; font-size: 120%"
+                    >
+                      <span
+                        class="fa-solid fa-mobile-screen"
+                        style="top: 20%; position: absolute; font-size: 60%"
+                      ></span>
+                    </span>
+                  </div>
+                  <h3 class="alt-features-title font-alt">Mobile</h3>
+                  Works with any Android phone or tablet (Bluetooth needed)
+                  Iphone's coming soon!
+                </div>
+
+                <div class="alt-features-item">
+                  <div class="alt-features-icon">
+                    <span class="fa-regular fa-pen-to-square"></span>
+                  </div>
+                  <h3 class="alt-features-title font-alt">Customisation</h3>
+                  Wanna change the colours or add your gym's or personal logo or
+                  new tool?
+                  <a href="#contact" style="font-weight: 700"> Contact us!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- WANT TO KNOW MORE -->
+        <section class="module-small bg-dark">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-md-8 col-lg-6 col-lg-offset-2">
+                <div class="callout-text font-alt">
+                  <h3 class="callout-title">
+                    Want to know more or want to talk about customisation?
+                  </h3>
+                  <p>Get in contact and let's talk about it!.</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-2">
+                <div class="callout-btn-box">
+                  <a class="btn btn-w btn-round" href="#contact">Contact</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- HARDWARE FEATURES -->
+        <section class="module" id="hardware">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Hardware Features</h2>
+                <!-- <div class="module-subtitle font-serif">sub title here</div> -->
+              </div>
+            </div>
+            <div class="row multi-columns-row">
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="features-item">
+                  <div class="features-icon">
+                    <span class="fa-regular fa-hand mirror-horizontal"></span
+                    ><span class="fa-regular fa-hand"></span>
+                  </div>
+                  <h3 class="features-title font-alt">One or Two Hands</h3>
+                  <p>
+                    Test and train only one hand at a time for extra precission
+                    or connect another one and use both to find imbalances and
+                    save time.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="features-item">
+                  <div class="features-icon">
+                    <span class="fa-brands fa-bluetooth-b"></span>
+                  </div>
+                  <h3 class="features-title font-alt">Completely Wireless</h3>
+                  <p>
+                    Bluetooth connection and an optional battery to ensure the
+                    training and testing area remains as clutter free as
+                    possible.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="features-item">
+                  <div class="features-icon">
+                    <span class="fa-solid fa-screwdriver-wrench"></span>
+                  </div>
+                  <h3 class="features-title font-alt">Easy Instalation</h3>
+                  <p>
+                    Thanks to using off the shelf (rust proof and way over
+                    specced) components, all you need for installation is a
+                    drill and a spanner.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="features-item">
+                  <div class="features-icon">
+                    <span class="fa-solid fa-dollar-sign"></span>
+                  </div>
+                  <h3 class="features-title font-alt">Low Price</h3>
+                  <p>
+                    Lower cost than other devices but no compromises! Having
+                    access to the newest technology shouldn't be restricted by
+                    price.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="features-item">
+                  <div class="features-icon">
+                    <span class="fa-solid fa-bullseye"></span>
+                  </div>
+                  <h3 class="features-title font-alt">Accurate & Precise</h3>
+                  <p>
+                    Able to measure grams, take a sample every 12.5 miliseconds
+                    and with a calibration proccess that takes less than a
+                    minute, all data will be as accurate as possible
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="features-item">
+                  <div class="features-icon">
+                    <span class="fa-solid fa-infinity"></span>
+                  </div>
+                  <h3 class="features-title font-alt">Endless Options</h3>
+                  <p>
+                    You can attach any hangboard, edge, hold or even a replica
+                    of outdoor boulders or routes! The only limit is your
+                    imagination. <a href="#contact">Find out more</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CALLBACK -->
+        <div style="margin-top: 70px"></div>
+        <section class="module bg-dark request-cta" data-background="">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <h2 class="font-alt">Request a call back</h2>
+                <p>
+                  Would you like to have one but have any doubts? Just submit
+                  your details and we’ll be in touch shortly. You can also email
+                  us if you would prefer.
+                </p>
+              </div>
+              <div class="col-sm-8">
+                <div class="row">
+                  <form
+                    class="form rqst-form"
+                    id="requestACall"
+                    role="form"
+                    method="post"
+                    action="php/request_call.php"
+                  >
+                    <div class="form-group col-sm-6 col-xs-12">
+                      <input
+                        class="form-control input-lg"
+                        type="text"
+                        name="name"
+                        placeholder="Name"
+                      />
+                    </div>
+                    <div class="form-group col-sm-6 col-xs-12">
+                      <select class="form-control input-lg" name="subject">
+                        <option value="subject1" disabled="" selected="">
+                          Subject
+                        </option>
+                        <option value="Hardware">Hardware</option>
+                        <option value="App">App</option>
+                        <option value="Orders">Orders</option>
+                        <option value="Other">Other</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-sm-6 col-xs-12">
+                      <input
+                        class="form-control input-lg"
+                        type="text"
+                        name="phone"
+                        placeholder="Phone Number"
+                      />
+                    </div>
+                    <div class="form-group col-sm-6 col-xs-12">
+                      <button
+                        class="btn btn-border-w btn-circle btn-block"
+                        id="racSubmit"
+                        type="submit"
+                      >
+                        <i class="fa fa-paper-plane-o"></i> Submit
+                      </button>
+                    </div>
+                    <div id="requestFormResponse"></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr class="divider-w" style="margin-top: 70px; margin-bottom: 70px" />
+
+        <!-- COMMENTS SLIDER -->
+        <section
+          class="module pt-0 pb-0 parallax-bg testimonial bg-dark-30"
+          data-background="../assets/images/5.webp"
+        >
+          <div class="testimonials-slider pt-140 pb-140">
+            <ul class="slides">
+              <li>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="module-icon">
+                        <span class="icon-quote"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                      <blockquote class="testimonial-text font-alt">
+                        Project Hangboard not only allowed us to collect the
+                        quality data we needed for our project but it's helping
+                        us get stronger as well!
+                      </blockquote>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4 col-sm-offset-4">
+                      <div class="testimonial-author">
+                        <div class="testimonial-caption font-alt">
+                          <div class="testimonial-title">Daniel Fernandez</div>
+                          <div class="testimonial-descr">PhD Researcher</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="module-icon">
+                        <span class="icon-quote"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                      <blockquote class="testimonial-text font-alt">
+                        Simple installation and incredibly intuitive to use.
+                      </blockquote>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4 col-sm-offset-4">
+                      <div class="testimonial-author">
+                        <div class="testimonial-caption font-alt">
+                          <div class="testimonial-title">Jorge Diaz</div>
+                          <div class="testimonial-descr">
+                            Climbing Gym Owner
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="module-icon">
+                        <span class="icon-quote"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                      <blockquote class="testimonial-text font-alt">
+                        Game-changer. Its technology provides precise
+                        measurements hangboard sessions. No more guesswork, just
+                        data-driven progress.
+                      </blockquote>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4 col-sm-offset-4">
+                      <div class="testimonial-author">
+                        <div class="testimonial-caption font-alt">
+                          <div class="testimonial-title">Rosalind Palmer</div>
+                          <div class="testimonial-descr">Personal Trainer</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <hr class="divider-w" style="margin-top: 70px; margin-bottom: 70px" />
+
+        <!-- SCOREBOARD -->
+        <section class="module bg-dark">
+          <div class="container">
+            <div class="row multi-columns-row">
+              <div class="col-sm-6 col-md-3 col-lg-3">
+                <div class="count-item mb-sm-40">
+                  <div class="count-icon">
+                    <span class="fa-solid fa-chart-line"></span>
+                  </div>
+                  <h3 class="count-to font-alt" data-countto="4"></h3>
+                  <h5 class="count-title font-serif">Assessments</h5>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3 col-lg-3">
+                <div class="count-item mb-sm-40">
+                  <div class="count-icon">
+                    <i class="fa-solid fa-dumbbell"></i>&nbsp;&nbsp;<i
+                      class="fa-solid fa-stopwatch-20"
+                    ></i>
+                  </div>
+                  <h3 class="count-to font-alt" data-countto="10"></h3>
+                  <h5 class="count-title font-serif">
+                    Preloaded workouts and timers
+                  </h5>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3 col-lg-3">
+                <div class="count-item mb-sm-40">
+                  <div class="count-icon">
+                    <span class="fa-solid fa-battery-three-quarters"></span>
+                  </div>
+                  <h3 class="count-to font-alt" data-countto="20"></h3>
+                  <h5 class="count-title font-serif">Days of battery*</h5>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3 col-lg-3">
+                <div class="count-item mb-sm-40">
+                  <div class="count-icon">
+                    <span class="fa-solid fa-map-location"></span>
+                  </div>
+                  <h3 class="count-to font-alt" data-countto="17"></h3>
+                  <h5 class="count-title font-serif">Locations covered</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- CONTACT -->
+        <section class="module-small" id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Get in touch</h2>
+                <div class="module-subtitle font-serif"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <form
+                  id="contactForm"
+                  role="form"
+                  method="post"
+                  action="../php/contact.php"
+                >
+                  <div class="form-group">
+                    <label class="sr-only" for="name">Name</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Your Name*"
+                      required="required"
+                      data-validation-required-message="Please enter your name."
+                    />
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="email">Email</label>
+                    <input
+                      class="form-control"
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Your Email*"
+                      required="required"
+                      data-validation-required-message="Please enter your email address."
+                    />
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <textarea
+                      class="form-control"
+                      rows="7"
+                      id="message"
+                      name="message"
+                      placeholder="Your Message*"
+                      required="required"
+                      data-validation-required-message="Please enter your message."
+                    ></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="text-center">
+                    <button
+                      class="btn btn-block btn-round btn-d"
+                      id="cfsubmit"
+                      type="submit"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </form>
+                <div
+                  class="ajax-response font-alt"
+                  id="contactFormResponse"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr class="divider-d" />
+        <!-- SMALL FOOTER -->
+        <footer class="footer bg-dark">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <p class="copyright font-alt">
+                  &copy; 2024&nbsp;<a href="index.html">Project Hangman</a>, All
+                  Rights Reserved
+                </p>
+              </div>
+              <div class="col-sm-6">
+                <div class="footer-social-links">
+                  <!-- <a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+      <!-- SCROLL UP BUTTON -->
+      <div class="scroll-up">
+        <a href="#totop"><i class="fa fa-angle-double-up"></i></a>
+      </div>
+    </main>
+  </body>
+</html>

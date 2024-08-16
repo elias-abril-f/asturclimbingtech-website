@@ -1550,12 +1550,14 @@
                 <div class="col-sm-6 col-sm-offset-3">
                   <form
                     id="contactForm"
+                    role="form"
                     action="https://formspree.io/f/xyzgpeov"
                     method="POST"
                   >
                     <div class="form-group">
                       <label class="sr-only" for="name">Name</label>
                       <input
+                        class="form-control"
                         type="text"
                         id="name"
                         name="name"
@@ -1568,6 +1570,7 @@
                     <div class="form-group">
                       <label class="sr-only" for="email">Email</label>
                       <input
+                        class="form-control"
                         type="email"
                         id="email"
                         name="email"
@@ -1579,6 +1582,7 @@
                     </div>
                     <div class="form-group">
                       <textarea
+                        class="form-control"
                         rows="7"
                         id="message"
                         name="message"
@@ -1598,6 +1602,10 @@
                       </button>
                     </div>
                   </form>
+                  <div
+                    class="ajax-response font-alt"
+                    id="contactFormResponse"
+                  ></div>
                 </div>
               </div>
             </div>

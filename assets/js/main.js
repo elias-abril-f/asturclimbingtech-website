@@ -441,20 +441,16 @@
          Working Contact Form
          ================================================================*/
 
-        $("#contactForm").submit(function (e) {
+        // const newLocal = $("#contactForm").submit(function (e) {
 
-            e.preventDefault();
+            // e.preventDefault();
             // var $ = jQuery;
-
             // var postData = $(this).serializeArray(),
             //     formURL = $(this).attr("action"),
             //     $cfResponse = $('#contactFormResponse'),
             //     $cfsubmit = $("#cfsubmit"),
             //     cfsubmitText = $cfsubmit.text();
-
             // $cfsubmit.text("Sending...");
-
-
             // $.ajax(
             //     {
             //         url: formURL,
@@ -471,91 +467,90 @@
             //             alert("Error occurd! Please try again");
             //         }
             //     });
+            // return false;
 
-            return false;
-
-        });
+        // });
 
 
         /*===============================================================
          Working Request A Call Form
          ================================================================*/
 
-        $("#requestACall").submit(function (e) {
+        // $("#requestACall").submit(function (e) {
 
-            e.preventDefault();
-            var $ = jQuery;
+        //     e.preventDefault();
+        //     var $ = jQuery;
 
-            var postData = $(this).serializeArray(),
-                formURL = $(this).attr("action"),
-                $cfResponse = $('#requestFormResponse'),
-                $cfsubmit = $("#racSubmit"),
-                cfsubmitText = $cfsubmit.text();
+        //     var postData = $(this).serializeArray(),
+        //         formURL = $(this).attr("action"),
+        //         $cfResponse = $('#requestFormResponse'),
+        //         $cfsubmit = $("#racSubmit"),
+        //         cfsubmitText = $cfsubmit.text();
 
-            $cfsubmit.text("Sending...");
+        //     $cfsubmit.text("Sending...");
 
 
-            $.ajax(
-                {
-                    url: formURL,
-                    type: "POST",
-                    data: postData,
-                    success: function (data) {
-                        $cfResponse.html(data);
-                        $cfsubmit.text(cfsubmitText);
-                        $('#requestACall input[name=name]').val('');
-                        $('#requestACall input[name=subject]').val('');
-                        $('#requestACall textarea[name=phone]').val('');
-                    },
-                    error: function (data) {
-                        alert("Error occurd! Please try again");
-                    }
-                });
+        //     $.ajax(
+        //         {
+        //             url: formURL,
+        //             type: "POST",
+        //             data: postData,
+        //             success: function (data) {
+        //                 $cfResponse.html(data);
+        //                 $cfsubmit.text(cfsubmitText);
+        //                 $('#requestACall input[name=name]').val('');
+        //                 $('#requestACall input[name=subject]').val('');
+        //                 $('#requestACall textarea[name=phone]').val('');
+        //             },
+        //             error: function (data) {
+        //                 alert("Error occurd! Please try again");
+        //             }
+        //         });
 
-            return false;
+        //     return false;
 
-        });
+        // });
 
 
         /*===============================================================
          Working Reservation Form
          ================================================================*/
 
-        $("#reservationForm").submit(function (e) {
+        // $("#reservationForm").submit(function (e) {
 
-            e.preventDefault();
-            var $ = jQuery;
+        //     e.preventDefault();
+        //     var $ = jQuery;
 
-            var postData = $(this).serializeArray(),
-                formURL = $(this).attr("action"),
-                $cfResponse = $('#reservationFormResponse'),
-                $cfsubmit = $("#rfsubmit"),
-                cfsubmitText = $cfsubmit.text();
+        //     var postData = $(this).serializeArray(),
+        //         formURL = $(this).attr("action"),
+        //         $cfResponse = $('#reservationFormResponse'),
+        //         $cfsubmit = $("#rfsubmit"),
+        //         cfsubmitText = $cfsubmit.text();
 
-            $cfsubmit.text("Sending...");
+        //     $cfsubmit.text("Sending...");
 
 
-            $.ajax(
-                {
-                    url: formURL,
-                    type: "POST",
-                    data: postData,
-                    success: function (data) {
-                        $cfResponse.html(data);
-                        $cfsubmit.text(cfsubmitText);
-                        $('#reservationForm input[name=date]').val('');
-                        $('#reservationForm input[name=time]').val('');
-                        $('#reservationForm textarea[name=people]').val('');
-                        $('#reservationForm textarea[name=email]').val('');
-                    },
-                    error: function (data) {
-                        alert("Error occurd! Please try again");
-                    }
-                });
+        //     $.ajax(
+        //         {
+        //             url: formURL,
+        //             type: "POST",
+        //             data: postData,
+        //             success: function (data) {
+        //                 $cfResponse.html(data);
+        //                 $cfsubmit.text(cfsubmitText);
+        //                 $('#reservationForm input[name=date]').val('');
+        //                 $('#reservationForm input[name=time]').val('');
+        //                 $('#reservationForm textarea[name=people]').val('');
+        //                 $('#reservationForm textarea[name=email]').val('');
+        //             },
+        //             error: function (data) {
+        //                 alert("Error occurd! Please try again");
+        //             }
+        //         });
 
-            return false;
+        //     return false;
 
-        });
+        // });
 
 
         /* ---------------------------------------------- /*

@@ -175,42 +175,54 @@ That's it — the full page (gallery, overview, features, specs, related product
 
 ## Filter System
 
-The shop listing uses a two-level filter system defined in `assets/js/shop.js`.
+The shop listing uses a flat multi-select filter system defined in `assets/js/shop.js`.
 
-### Categories
+### Available filters
 
-Top-level filters (group toggles):
-
-- **Lifting Blocks** — expands to show Classic / Ergo / Forge sub-filters
-- **Hangboards** — expands to show Classic / Ergo / Forge sub-filters
-
-Standalone filters:
-
-- **Accessories**
-- **Apparel & Merch**
+| Button | `data-filter` | Matches products tagged with |
+|---|---|---|
+| All Products | `all` | Clears all active filters |
+| Lifting Blocks | `lifting-blocks` | `lifting-blocks` |
+| Hangboards | `hangboards` | `hangboards` |
+| Classic | `classic` | `classic` (both lifting blocks and hangboards) |
+| Ergo | `ergo` | `ergo` (both lifting blocks and hangboards) |
+| Forge | `forge` | `forge` (both lifting blocks and hangboards) |
+| Accessories | `accessories` | `accessories` |
+| Apparel & Merch | `apparel` | `apparel` |
 
 ### How filtering works
 
-- Clicking **Lifting Blocks** or **Hangboards** shows all products in that group
-- Clicking a sub-filter (e.g. Classic) narrows within the active group
-- Multiple filters can be active at once
-- Products can belong to multiple categories
+- Every filter button is an independent toggle — click any combination
+- Multiple active filters show the **union** of matching products (OR logic)
+- **Classic**, **Ergo**, and **Forge** match across both Lifting Blocks and Hangboards
+- Clicking **All Products** clears all active filters
+
+### Linking to the shop with filters pre-applied
+
+Append `?filter=` to the shop URL. Supports a single tag or a comma-separated list:
+
+```text
+/shop/?filter=lifting-blocks
+/shop/?filter=classic
+/shop/?filter=ergo,forge
+/shop/?filter=lifting-blocks,hangboards
+```
 
 ### filterTags
 
-Set in `products.js` per product. Format: array of strings that become the space-separated `data-category` attribute on the generated card.
-
-Examples:
+Set in `products.js` per product. The array becomes the space-separated `data-category` attribute on the generated card — each value corresponds to a filter button's `data-filter`.
 
 ```js
-filterTags: ['lifting-blocks', 'classic']   // → data-category="lifting-blocks classic"
+filterTags: ['lifting-blocks', 'classic']   // matches "Lifting Blocks" and "Classic"
 filterTags: ['lifting-blocks', 'ergo']
 filterTags: ['hangboards', 'forge']
 filterTags: ['accessories']
 filterTags: ['apparel']
 ```
 
-### Adding a new filter category
+A product with `filterTags: ['lifting-blocks', 'classic']` will appear when either **Lifting Blocks** or **Classic** is active.
+
+### Adding a new filter
 
 1. Add a button in `shop/index.html`:
 
@@ -218,8 +230,8 @@ filterTags: ['apparel']
    <button class="filter-btn" data-filter="new-category">New Category</button>
    ```
 
-2. Add `filterTags: ['new-category']` to the relevant products in `products.js`
-3. No JS changes needed for standalone filters
+2. Add the matching tag to `filterTags` on the relevant products in `products.js`
+3. No JS changes needed
 
 ---
 

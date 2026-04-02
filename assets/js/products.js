@@ -232,7 +232,7 @@ const ASTUR_PRODUCTS = {
       { src: '/assets/images/products/Forge/FrontWhite-square.webp', alt: 'Forge Block white front' },
       { src: '/assets/images/products/Forge/ActionWhite-square.webp', alt: 'Forge Block white in use' },
       { src: '/assets/images/products/Forge/Black Action-square.webp', alt: 'Forge Block black in use' },
-      { src: '/assets/images/products/Forge/DoubleFront.webp', alt: 'Forge Block double front' },
+      { src: '/assets/images/products/Forge/forgeDoubleFront.webp', alt: 'Forge Block double front' },
       { src: '/assets/images/products/Forge/DoubleBack.webp', alt: 'Forge Block double back' },
       { src: '/assets/images/products/Forge/NoBack/forge-001.webp', alt: 'Forge Block detail 1' },
       { src: '/assets/images/products/Forge/NoBack/forge-002.webp', alt: 'Forge Block detail 2' },

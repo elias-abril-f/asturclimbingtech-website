@@ -168,6 +168,13 @@
     productItems.forEach(item => {
       item.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
     });
+
+    // Apply filter from URL query param, e.g. /shop/?filter=lifting-blocks
+    const urlFilter = new URLSearchParams(window.location.search).get('filter');
+    if (urlFilter) {
+      const btn = document.querySelector(`.filter-btn[data-filter="${urlFilter}"]`);
+      if (btn) btn.click();
+    }
   }
 
   document.addEventListener('DOMContentLoaded', function () {

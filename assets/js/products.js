@@ -211,7 +211,6 @@ const ASTUR_PRODUCTS = {
     price: '[PRICE]',
     category: 'Lifting Block — Forge',
     filterTags: ['lifting-blocks', 'forge'],
-    visible: false,
     description: [
       'The Forge Block is built around a precision-machined metal backplate that serves as the structural core of the modular Forge system. The hybrid edge combines metal rigidity with a tactile contact surface, giving a feel distinct from both pure wood and standard plastic holds.',
       'As part of the modular Forge system, individual blocks can be swapped, reconfigured, and paired with the Nomad Forge fingerboard. Available in black and white. Built to last, with zero flex under load.',
@@ -284,6 +283,7 @@ const ASTUR_PRODUCTS = {
     price: '[PRICE]',
     category: 'Hangboard — Forge',
     filterTags: ['hangboards', 'forge'],
+    visible: false,
     badge: 'new',
     description: [
       'The Nomad Forge combines the 60cm carbon fibre core of the Nomad system with the modular Forge block interface. Unlike the magnetic Classic system, the Forge uses a mechanical modular connection — blocks lock into position with precise alignment and can be reconfigured as your training evolves.',

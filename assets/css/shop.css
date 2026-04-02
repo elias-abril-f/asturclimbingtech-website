@@ -135,32 +135,6 @@
   color: var(--summit-white);
 }
 
-/* Filter Group (Lifting Blocks) */
-.filter-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  align-items: center;
-}
-
-.filter-group-arrow {
-  display: inline-block;
-  margin-left: 4px;
-  transition: transform 0.2s ease;
-}
-
-.filter-group-sub {
-  display: none;
-  gap: 8px;
-}
-
-.filter-group-sub.open {
-  display: flex;
-}
-
-.filter-group:has(.filter-group-sub.open) .filter-group-arrow {
-  transform: rotate(180deg);
-}
 
 /* Product Grid */
 .product-grid {

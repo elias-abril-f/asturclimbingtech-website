@@ -1,0 +1,158 @@
+/* 
+ * Astur Climbing Brand Colors
+ * Based on 2026 Visual Brand Guidelines
+ */
+
+:root {
+  /* Primary Brand Colors */
+  --sage-green: #848E78;        /* Pantone 5783 C - Primary Accent */
+  --astur-dark: #252323;        /* Pantone Black 3 C - Dark Backgrounds */
+  --summit-white: #FFFFFF;      /* Pantone White - Light Backgrounds */
+  --crimson-cliff: #BD6B73;     /* Pantone 7522 C - Dark Accent */
+  --rose-quartz: #DB93B0;       /* Pantone 672 C - Light Accent */
+  
+  /* Color Tints - Sage Green */
+  --sage-green-100: #848E78;
+  --sage-green-80: rgba(132, 142, 120, 0.8);
+  --sage-green-60: rgba(132, 142, 120, 0.6);
+  --sage-green-40: rgba(132, 142, 120, 0.4);
+  --sage-green-20: rgba(132, 142, 120, 0.2);
+  --sage-green-10: rgba(132, 142, 120, 0.1);
+  
+  /* Color Tints - Crimson Cliff */
+  --crimson-cliff-100: #BD6B73;
+  --crimson-cliff-80: rgba(189, 107, 115, 0.8);
+  --crimson-cliff-60: rgba(189, 107, 115, 0.6);
+  --crimson-cliff-40: rgba(189, 107, 115, 0.4);
+  --crimson-cliff-20: rgba(189, 107, 115, 0.2);
+  --crimson-cliff-10: rgba(189, 107, 115, 0.1);
+  
+  /* Color Tints - Rose Quartz */
+  --rose-quartz-100: #DB93B0;
+  --rose-quartz-80: rgba(219, 147, 176, 0.8);
+  --rose-quartz-60: rgba(219, 147, 176, 0.6);
+  --rose-quartz-40: rgba(219, 147, 176, 0.4);
+  --rose-quartz-20: rgba(219, 147, 176, 0.2);
+  --rose-quartz-10: rgba(219, 147, 176, 0.1);
+  
+  /* Color Tints - Astur Dark */
+  --astur-dark-100: #252323;
+  --astur-dark-80: rgba(37, 35, 35, 0.8);
+  --astur-dark-60: rgba(37, 35, 35, 0.6);
+  --astur-dark-40: rgba(37, 35, 35, 0.4);
+  --astur-dark-20: rgba(37, 35, 35, 0.2);
+  --astur-dark-10: rgba(37, 35, 35, 0.1);
+  
+  /* Legacy color mappings for compatibility */
+  --color-primary: var(--sage-green);
+  --color-accent: var(--crimson-cliff);
+  --color-accent-light: var(--rose-quartz);
+  --color-dark: var(--astur-dark);
+  --color-light: var(--summit-white);
+  
+  /* Text colors */
+  --text-dark: var(--astur-dark);
+  --text-light: var(--summit-white);
+  --text-muted: #666666;
+  
+  /* Background colors */
+  --bg-dark: var(--astur-dark);
+  --bg-light: var(--summit-white);
+  --bg-sage: var(--sage-green);
+  --bg-crimson: var(--crimson-cliff);
+  
+  /* Border colors */
+  --border-light: #e5e5e5;
+  --border-sage: var(--sage-green-40);
+}
+
+/* Apply brand colors to common elements */
+body {
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+}
+
+/* Primary buttons and CTAs */
+.btn-primary,
+.button-primary {
+  background-color: var(--sage-green);
+  border-color: var(--sage-green);
+  color: var(--text-light);
+}
+
+.btn-primary:hover,
+.button-primary:hover {
+  background-color: var(--astur-dark);
+  border-color: var(--astur-dark);
+  color: var(--text-light);
+}
+
+/* Secondary buttons */
+.btn-secondary,
+.button-secondary {
+  background-color: var(--crimson-cliff);
+  border-color: var(--crimson-cliff);
+  color: var(--text-light);
+}
+
+.btn-secondary:hover,
+.button-secondary:hover {
+  background-color: var(--rose-quartz);
+  border-color: var(--rose-quartz);
+  color: var(--text-dark);
+}
+
+/* Accent elements */
+.accent,
+.highlight {
+  color: var(--sage-green);
+}
+
+/* Dark sections */
+.section-dark,
+.bg-dark {
+  background-color: var(--astur-dark);
+  color: var(--text-light);
+}
+
+/* Light sections */
+.section-light,
+.bg-light {
+  background-color: var(--summit-white);
+  color: var(--text-dark);
+}
+
+/* Sage sections */
+.section-sage,
+.bg-sage {
+  background-color: var(--sage-green);
+  color: var(--text-light);
+}
+
+/* Links */
+a {
+  color: var(--sage-green);
+}
+
+a:hover {
+  color: var(--crimson-cliff);
+}
+
+/* Headers and navigation */
+.navbar,
+.header {
+  background-color: var(--astur-dark);
+  color: var(--text-light);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--astur-dark);
+  color: var(--text-light);
+}
+
+/* Borders and dividers */
+hr,
+.divider {
+  border-color: var(--border-sage);
+}

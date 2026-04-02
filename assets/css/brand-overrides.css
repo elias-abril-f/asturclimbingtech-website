@@ -1,0 +1,737 @@
+/* 
+ * Astur Climbing Brand Overrides
+ * 2026 Visual Brand Guidelines Application
+ * This file applies brand styling across all existing page elements
+ */
+
+/* ========================================
+   NAVIGATION BAR
+   ======================================== */
+.navbar-custom {
+  background-color: var(--astur-dark) !important;
+  border-bottom: 1px solid var(--sage-green-20);
+}
+
+.navbar-custom .navbar-brand {
+  color: var(--summit-white) !important;
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.navbar-custom .navbar-nav > li > a {
+  color: var(--summit-white) !important;
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+  color: var(--sage-green) !important;
+}
+
+/* Active state indicator */
+.navbar-custom .navbar-nav > li.active > a,
+.navbar-custom .navbar-nav > li > a.active {
+  color: var(--sage-green) !important;
+}
+
+.navbar-custom .navbar-nav > li.active > a::after,
+.navbar-custom .navbar-nav > li > a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 2px;
+  background-color: var(--sage-green);
+}
+
+/* Mobile menu active state */
+@media (max-width: 767px) {
+  .navbar-custom .navbar-nav > li.active > a::after,
+  .navbar-custom .navbar-nav > li > a.active::after {
+    display: none;
+  }
+
+  .navbar-custom .navbar-nav > li.active > a,
+  .navbar-custom .navbar-nav > li > a.active {
+    border-left: 3px solid var(--sage-green);
+    padding-left: 20px;
+  }
+}
+
+.navbar-custom.navbar-transparent {
+  background-color: rgba(37, 35, 35, 0.9) !important;
+}
+
+/* ========================================
+   HERO SECTIONS
+   ======================================== */
+.hero-slider .bg-dark,
+.home-section.bg-dark {
+  background-color: var(--astur-dark) !important;
+}
+
+.hero-slider .bg-dark-30::before {
+  background-color: rgba(37, 35, 35, 0.3);
+}
+
+.caption-content .title-size-1,
+.caption-content .title-size-4 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ========================================
+   BUTTONS
+   ======================================== */
+.btn {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 12px 30px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary,
+.btn-border-d {
+  background-color: var(--sage-green) !important;
+  border-color: var(--sage-green) !important;
+  color: var(--summit-white) !important;
+}
+
+.btn-primary:hover,
+.btn-border-d:hover {
+  background-color: var(--astur-dark) !important;
+  border-color: var(--astur-dark) !important;
+  color: var(--summit-white) !important;
+}
+
+.btn-border-w {
+  background-color: transparent;
+  border: 2px solid var(--summit-white);
+  color: var(--summit-white);
+}
+
+.btn-border-w:hover {
+  background-color: var(--sage-green);
+  border-color: var(--sage-green);
+  color: var(--summit-white);
+}
+
+.btn-secondary {
+  background-color: var(--crimson-cliff);
+  border-color: var(--crimson-cliff);
+  color: var(--summit-white);
+}
+
+.btn-secondary:hover {
+  background-color: var(--rose-quartz);
+  border-color: var(--rose-quartz);
+  color: var(--astur-dark);
+}
+
+/* ========================================
+   FEATURES & SERVICES
+   ======================================== */
+.features-title,
+.service-title {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--astur-dark);
+}
+
+.features-icon span {
+  color: var(--sage-green);
+}
+
+.features-item:hover .features-icon span {
+  color: var(--crimson-cliff);
+}
+
+/* ========================================
+   SECTIONS
+   ======================================== */
+.module {
+  background-color: var(--summit-white);
+}
+
+.module.bg-dark,
+section.bg-dark {
+  background-color: var(--astur-dark) !important;
+  color: var(--summit-white);
+}
+
+.module-title,
+.section-title {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--astur-dark);
+}
+
+.bg-dark .module-title,
+.bg-dark .section-title {
+  color: var(--summit-white);
+}
+
+.module-subtitle {
+  color: var(--sage-green);
+  font-family: var(--font-body);
+}
+
+/* ========================================
+   DIVIDERS
+   ======================================== */
+.divider {
+  height: 2px;
+  background-color: var(--sage-green-40);
+  border: none;
+  margin: 40px 0;
+}
+
+hr {
+  border-top: 1px solid var(--sage-green-20);
+}
+
+/* ========================================
+   LINKS
+   ======================================== */
+a {
+  color: var(--sage-green);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--crimson-cliff);
+  text-decoration: none;
+}
+
+.bg-dark a {
+  color: var(--sage-green);
+}
+
+.bg-dark a:hover {
+  color: var(--rose-quartz);
+}
+
+/* ========================================
+   PRICING TABLES
+   ======================================== */
+.price-table {
+  border: 2px solid var(--sage-green-20);
+  transition: all 0.3s ease;
+}
+
+.price-table:hover {
+  border-color: var(--sage-green);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(132, 142, 120, 0.2);
+}
+
+.price-table-title {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: var(--sage-green);
+  color: var(--summit-white);
+}
+
+.price-details {
+  background-color: var(--summit-white);
+}
+
+.price {
+  color: var(--astur-dark);
+  font-family: var(--font-display);
+}
+
+/* ========================================
+   FORMS
+   ======================================== */
+.form-control {
+  border: 1px solid var(--sage-green-20);
+  font-family: var(--font-body);
+  color: var(--astur-dark);
+}
+
+.form-control:focus {
+  border-color: var(--sage-green);
+  box-shadow: 0 0 0 0.2rem rgba(132, 142, 120, 0.25);
+}
+
+label {
+  font-family: var(--font-body);
+  color: var(--astur-dark);
+  font-weight: 500;
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+.footer {
+  background-color: var(--astur-dark) !important;
+  color: var(--summit-white);
+  border-top: 2px solid var(--sage-green);
+}
+
+.footer a {
+  color: var(--sage-green);
+}
+
+.footer a:hover {
+  color: var(--rose-quartz);
+}
+
+.footer-title {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--summit-white);
+}
+
+/* ========================================
+   TESTIMONIALS
+   ======================================== */
+.testimonial {
+  font-family: var(--font-body);
+  font-style: italic;
+}
+
+.testimonial-author {
+  font-family: var(--font-display);
+  color: var(--sage-green);
+  font-style: normal;
+}
+
+/* ========================================
+   PORTFOLIO / WORK ITEMS
+   ======================================== */
+.work-title,
+.portfolio-title {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--astur-dark);
+}
+
+.work-caption,
+.portfolio-caption {
+  background-color: rgba(37, 35, 35, 0.9);
+  color: var(--summit-white);
+}
+
+/* ========================================
+   TEAM MEMBERS
+   ======================================== */
+.team-name {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--astur-dark);
+}
+
+.team-role {
+  color: var(--sage-green);
+  font-family: var(--font-body);
+}
+
+/* ========================================
+   ALERTS & CALLOUTS
+   ======================================== */
+.alert {
+  border-left: 4px solid var(--sage-green);
+  background-color: var(--sage-green-10);
+  color: var(--astur-dark);
+  font-family: var(--font-body);
+}
+
+.alert-success {
+  border-left-color: var(--sage-green);
+  background-color: var(--sage-green-10);
+}
+
+.alert-info {
+  border-left-color: var(--rose-quartz);
+  background-color: var(--rose-quartz-10);
+}
+
+.alert-warning {
+  border-left-color: var(--crimson-cliff);
+  background-color: var(--crimson-cliff-10);
+}
+
+/* ========================================
+   BADGES & LABELS
+   ======================================== */
+.badge,
+.label {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge-primary,
+.label-primary {
+  background-color: var(--sage-green);
+}
+
+.badge-secondary,
+.label-secondary {
+  background-color: var(--crimson-cliff);
+}
+
+/* ========================================
+   SOCIAL ICONS
+   ======================================== */
+.social-icon {
+  color: var(--sage-green);
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: var(--crimson-cliff);
+}
+
+/* ========================================
+   LOADER
+   ======================================== */
+.page-loader {
+  background-color: var(--astur-dark);
+}
+
+.loader {
+  border-top-color: var(--sage-green);
+  color: var(--summit-white);
+  font-family: var(--font-display);
+}
+
+/* ========================================
+   FONT UTILITY CLASSES
+   ======================================== */
+.font-alt {
+  font-family: var(--font-display) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.font-serif {
+  font-family: var(--font-body) !important;
+}
+
+/* ========================================
+   RESPONSIVE ADJUSTMENTS
+   ======================================== */
+@media (max-width: 768px) {
+  .navbar-custom .navbar-nav > li > a {
+    font-size: 0.875rem;
+  }
+
+  .btn {
+    padding: 10px 24px;
+    font-size: 0.875rem;
+  }
+}
+
+/* ========================================
+   CUSTOM ACCENT CLASSES
+   ======================================== */
+.accent-sage {
+  color: var(--sage-green) !important;
+}
+
+.accent-crimson {
+  color: var(--crimson-cliff) !important;
+}
+
+.accent-rose {
+  color: var(--rose-quartz) !important;
+}
+
+.bg-sage {
+  background-color: var(--sage-green) !important;
+  color: var(--summit-white);
+}
+
+.bg-crimson {
+  background-color: var(--crimson-cliff) !important;
+  color: var(--summit-white);
+}
+
+.bg-rose {
+  background-color: var(--rose-quartz) !important;
+  color: var(--astur-dark);
+}
+
+/* ========================================
+   HERO BACKGROUND IMAGES
+   ======================================== */
+#hero1,
+#hero2,
+#hero-products {
+  position: relative;
+}
+
+#hero1::before,
+#hero2::before,
+#hero-products::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(37, 35, 35, 0.5);
+  z-index: 1;
+}
+
+#hero1 .caption,
+#hero2 .caption,
+#hero-products .caption {
+  position: relative;
+  z-index: 2;
+}
+
+/* Hero Buttons Group */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 480px) {
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons .btn {
+    margin: 5px 0 !important;
+    min-width: 200px;
+  }
+}
+
+/* ========================================
+   PRODUCTS SECTION
+   ======================================== */
+.shop-item {
+  margin-bottom: 40px;
+  transition: transform 0.3s ease;
+}
+
+.shop-item:hover {
+  transform: translateY(-5px);
+}
+
+.shop-item-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.shop-item-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+  border: 2px solid var(--sage-green-20);
+}
+
+.shop-item:hover .shop-item-image img {
+  transform: scale(1.05);
+}
+
+.shop-item-image .hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(37, 35, 35, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.shop-item:hover .shop-item-image .hover-overlay {
+  opacity: 1;
+}
+
+.shop-item-image .hover-overlay .btn {
+  background-color: var(--summit-white) !important;
+  color: var(--astur-dark) !important;
+  border: 2px solid var(--summit-white) !important;
+  font-weight: 700;
+  padding: 15px 35px;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.shop-item-image .hover-overlay .btn:hover {
+  background-color: var(--sage-green) !important;
+  color: var(--summit-white) !important;
+  border-color: var(--sage-green) !important;
+}
+
+/* Description banner at bottom of image */
+.shop-item-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: var(--summit-white);
+  background-color: rgba(37, 35, 35, 0.95);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  padding: 12px 15px;
+  font-size: 1.25rem;
+  margin: 0;
+  border-radius: 0 0 8px 8px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.shop-item:hover .shop-item-description {
+  opacity: 1;
+}
+
+.shop-item-title {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+  font-size: 1.25rem;
+}
+
+.shop-item-title a {
+  color: var(--astur-dark);
+  text-decoration: none;
+}
+
+.shop-item-title a:hover {
+  color: var(--sage-green);
+}
+
+.shop-item-price {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Work Details Styling */
+.work-details {
+  background: var(--summit-white);
+  padding: 30px;
+  border-left: 4px solid var(--sage-green);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.work-details-title {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+  font-size: 1.25rem;
+}
+
+.work-details p {
+  color: var(--astur-dark);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.work-details-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.work-details-list li {
+  padding: 8px 0;
+  padding-left: 40px;
+  position: relative;
+  font-family: var(--font-body);
+  color: var(--astur-dark);
+}
+
+.work-details-list li::before {
+  content: "▸";
+  position: absolute;
+  left: -15px;
+  color: var(--sage-green);
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.work-details-list li strong {
+  color: var(--sage-green);
+  font-weight: 600;
+}
+/* Footer Overrides */
+.footer {
+  background-color: var(--astur-dark) !important;
+  color: var(--summit-white) !important;
+}
+
+/* Only apply thin styling to copyright section, not contact form */
+.footer > .container:last-child {
+  padding: 10px 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  min-height: 40px !important;
+}
+
+.footer > .container:last-child .row {
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+.footer .copyright {
+  font-size: 0.8125rem !important;
+  margin: 0 !important;
+  text-align: left !important;
+  line-height: 1.4 !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+
+.footer-social-links {
+  text-align: left !important;
+  margin-top: 0 !important;
+  margin-left: 15px !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+
+.footer-social-links a {
+  color: var(--sage-green) !important;
+  font-size: 1.0625rem !important;
+  margin-right: 12px !important;
+  margin-left: 0 !important;
+  vertical-align: middle !important;
+}
+
+.footer-social-links a:hover {
+  color: var(--summit-white) !important;
+}

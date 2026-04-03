@@ -669,7 +669,7 @@ label {
 
 .work-details-list li {
   padding: 8px 0;
-  padding-left: 40px;
+  padding-left: 20px;
   position: relative;
   font-family: var(--font-body);
   color: var(--astur-dark);
@@ -678,7 +678,8 @@ label {
 .work-details-list li::before {
   content: "▸";
   position: absolute;
-  left: -15px;
+  left: 0;
+  top: 6px;
   color: var(--sage-green);
   font-weight: bold;
   font-size: 1.2em;

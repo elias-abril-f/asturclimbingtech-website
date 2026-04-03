@@ -135,7 +135,6 @@
   color: var(--summit-white);
 }
 
-
 /* Product Grid */
 .product-grid {
   display: flex;
@@ -508,6 +507,16 @@
 
   .product-detail-price {
     font-size: 1.5rem;
+  }
+
+  /* Gallery: hide side thumbnails, stretch main image to full width */
+  .product-gallery-row > [class*="col-"]:first-child,
+  .product-gallery-row > [class*="col-"]:last-child {
+    display: none;
+  }
+
+  .product-gallery-row > [class*="col-"]:nth-child(2) {
+    width: 100%;
   }
 }
 

@@ -503,7 +503,7 @@ function renderProductPage() {
   ).join('');
 
   root.innerHTML = `
-    <section class="module" style="padding-top:80px;padding-bottom:60px;">
+    <section class="module" style="padding-top:80px;padding-bottom:20px;">
       <div class="container">
 
         <div class="row">
@@ -556,7 +556,7 @@ function renderProductPage() {
           </div>
         </div>
 
-        <div class="row" style="margin-top:60px;">
+        <div class="row" style="margin-top:30px;">
           <div class="col-md-12">
             <h2 class="font-alt" style="font-size:1.75rem;margin-bottom:20px;text-transform:uppercase;">Technical Specifications</h2>
             <div class="product-specs">${specsHTML}</div>
@@ -620,9 +620,9 @@ function renderRelatedProducts(skus) {
   if (products.length === 0) return;
 
   container.innerHTML = `
-    <div class="row" style="margin-top:80px;margin-bottom:20px;">
+    <div class="row" style="margin-top:20px;margin-bottom:20px;">
       <div class="col-sm-12">
-        <h2 class="font-alt" style="font-size:1.75rem;margin-bottom:40px;text-transform:uppercase;border-top:1px solid var(--border-sage);padding-top:40px;">
+        <h2 class="font-alt" style="font-size:1.75rem;margin-bottom:20px;text-transform:uppercase;border-top:1px solid var(--border-sage);padding-top:40px;">
           You Might Also Like
         </h2>
       </div>

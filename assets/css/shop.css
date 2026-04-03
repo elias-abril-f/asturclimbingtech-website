@@ -326,6 +326,25 @@
   color: var(--astur-dark);
 }
 
+/* Product page header: back link + title */
+.product-page-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.product-back-link {
+  flex: 1;
+}
+
+.product-page-title {
+  flex: 0 0 auto;
+}
+
+.product-header-spacer {
+  flex: 1;
+}
+
 .product-detail-price {
   font-family: var(--font-display);
   font-size: 2rem;
@@ -519,6 +538,26 @@
 
   .product-detail-price {
     font-size: 1.5rem;
+  }
+
+  /* Product page header: stack back link above title on mobile */
+  .product-page-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-back-link {
+    flex: none;
+    margin-bottom: 12px;
+  }
+
+  .product-page-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .product-header-spacer {
+    display: none;
   }
 
   /* Gallery: hide side thumbnails, stretch main image to full width */

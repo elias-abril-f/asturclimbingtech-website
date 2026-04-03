@@ -51,7 +51,7 @@ const ASTUR_PRODUCTS = {
       { src: '/assets/images/products/Classic/Classic2010/Back.webp', alt: 'Classic Duo back' },
       { src: '/assets/images/products/Classic/Classic2010/FrontIncline.webp', alt: 'Classic Duo incline' },
     ],
-    relatedSkus: ['LE-VDE', 'LC-H20', 'FB-NMC', 'AC-SPL'],
+    relatedSkus: ['LE-VDE', 'LF-BLK', 'FB-NMC', 'AC-SPL'],
   },
 
   'LC-H20': {
@@ -239,7 +239,7 @@ const ASTUR_PRODUCTS = {
       { src: '/assets/images/products/Forge/NoBack/forge-003.webp', alt: 'Forge Block detail 3' },
       { src: '/assets/images/products/Forge/NoBack/forge-004.webp', alt: 'Forge Block detail 4' },
     ],
-    relatedSkus: ['LE-O20', 'FB-NMF', 'MT-THD', 'AC-SPL'],
+    relatedSkus: ['LE-O20', 'LF-BLK', 'LC-D2010', 'AC-SPL'],
   },
 
   'FB-NMC': {
@@ -272,7 +272,7 @@ const ASTUR_PRODUCTS = {
       { src: '/assets/images/products/portable-hangboard-placeholder.jpg', alt: 'Nomad Classic detail' },
       { src: '/assets/images/products/portable-hangboard-placeholder.jpg', alt: 'Nomad Classic in use' },
     ],
-    relatedSkus: ['LC-D2010', 'FB-NMF', 'MT-THD', 'AC-SPL'],
+    relatedSkus: ['LC-D2010', 'LF-BLK', 'LE-VDE', 'AC-SPL'],
   },
 
   'FB-NMF': {
@@ -306,7 +306,7 @@ const ASTUR_PRODUCTS = {
       { src: '/assets/images/products/ergo-edges-pro-placeholder.jpg', alt: 'Nomad Forge detail' },
       { src: '/assets/images/products/ergo-edges-pro-placeholder.jpg', alt: 'Nomad Forge in use' },
     ],
-    relatedSkus: ['LF-BLK', 'FB-NMC', 'MT-THD', 'AC-SPL'],
+    relatedSkus: ['LF-BLK', 'FB-NMC', 'LC-D2010', 'AC-SPL'],
   },
 
   'MT-THD': {
@@ -339,7 +339,7 @@ const ASTUR_PRODUCTS = {
       { src: '/assets/images/products/wall-mount-placeholder.jpg', alt: 'Threshold detail' },
       { src: '/assets/images/products/wall-mount-placeholder.jpg', alt: 'Threshold in use' },
     ],
-    relatedSkus: ['FB-NMC', 'FB-NMF', 'LC-D2010', 'AC-SPL'],
+    relatedSkus: ['FB-NMC', 'LF-BLK', 'LC-D2010', 'AC-SPL'],
   },
 
   'AP-FRT': {
@@ -416,7 +416,7 @@ const ASTUR_PRODUCTS = {
       { src: '/assets/images/products/PSS/NoBack/pss-001.webp', alt: 'Pulley Splints no background 1' },
       { src: '/assets/images/products/PSS/NoBack/pss-002.webp', alt: 'Pulley Splints no background 2' },
     ],
-    relatedSkus: ['LC-D2010', 'LE-VDE', 'MT-THD', 'LF-BLK'],
+    relatedSkus: ['LC-D2010', 'LE-VDE', 'FB-NMC', 'LF-BLK'],
   },
 };
 

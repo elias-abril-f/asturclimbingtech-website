@@ -770,3 +770,21 @@ label {
 .footer-social-links a:hover {
   color: var(--summit-white) !important;
 }
+
+/* hero-products image focus adjustment */
+#hero-products {
+  background-position: 66% center; /* shift focus toward right side */
+  background-size: cover;
+}
+
+@media (max-width: 991px) {
+  #hero-products {
+    background-position: 75% center; /* more right-side focus on tablet/mobile */
+  }
+}
+
+@media (max-width: 767px) {
+  #hero-products {
+    background-position: 83% center; /* mobile */
+  }
+}

@@ -20,7 +20,8 @@ const ASTUR_PRODUCTS = {
     tagline: 'Double-sided hardwood lifting edge — 20mm & 10mm',
     url: '/shop/products/classic-duo.html',
     image: '/assets/images/products/Classic/Classic2010/Square/actionInclineSquare.webp',
-    price: '[PRICE]',
+    price: '30',
+    buyUrl: 'https://square.link/u/cxH5LWO2',
     category: 'Lifting Block — Classic',
     filterTags: ['lifting-blocks', 'classic'],
     description: [
@@ -56,7 +57,8 @@ const ASTUR_PRODUCTS = {
     tagline: '20mm wood + 3DP texture edge for high friction training',
     url: '/shop/products/classic-hybrid.html',
     image: '/assets/images/products/ergo-edges-compact-placeholder.jpg',
-    price: '[PRICE]',
+    price: '30',
+    buyUrl: '',
     category: 'Lifting Block — Classic',
     filterTags: ['lifting-blocks', 'classic'],
     visible: false,
@@ -89,7 +91,8 @@ const ASTUR_PRODUCTS = {
     tagline: '20mm straight wood + 20mm variable depth 3DP edge',
     url: '/shop/products/ergo-vde.html',
     image: '/assets/images/products/Ergo/VDE20/2020-1-square.webp',
-    price: '[PRICE]',
+    price: '30',
+    buyUrl: 'https://square.link/u/4VcnAAwH',
     category: 'Lifting Block — Ergo',
     filterTags: ['lifting-blocks', 'ergo'],
     description: [
@@ -124,7 +127,8 @@ const ASTUR_PRODUCTS = {
     tagline: '20mm stepped hardwood edge for progressive loading',
     url: '/shop/products/ergo-step.html',
     image: '/assets/images/products/Ergo/Stepped/7OK4902_square.webp',
-    price: '[PRICE]',
+    price: '40',
+    buyUrl: 'https://square.link/u/CbOyiWRU',
     category: 'Lifting Block — Ergo',
     filterTags: ['lifting-blocks', 'ergo'],
     description: [
@@ -156,7 +160,8 @@ const ASTUR_PRODUCTS = {
     tagline: '20mm stepped + offset hardwood edge for technical training',
     url: '/shop/products/ergo-offset.html',
     image: '/assets/images/products/Ergo/Offset/Black/7OK4884_square.webp',
-    price: '[PRICE]',
+    price: '40',
+    buyUrl: 'https://square.link/u/EVqhd3uu',
     category: 'Lifting Block — Ergo',
     filterTags: ['lifting-blocks', 'ergo'],
     description: [
@@ -192,7 +197,8 @@ const ASTUR_PRODUCTS = {
     tagline: 'Metal backplate + hybrid edge system — modular',
     url: '/shop/products/forge-block.html',
     image: '/assets/images/products/Forge/ActionWhite-square.webp',
-    price: '[PRICE]',
+    price: '40',
+    buyUrl: 'https://square.link/u/QdwRAsri',
     category: 'Lifting Block — Forge',
     filterTags: ['lifting-blocks', 'forge'],
     description: [
@@ -225,7 +231,8 @@ const ASTUR_PRODUCTS = {
     tagline: '60cm carbon core fingerboard with magnetic Classic Duo blocks',
     url: '/shop/products/nomad-classic.html',
     image: '/assets/images/products/hangboards/classicNomad/001.webp',
-    price: '[PRICE]',
+    price: '55 - £60',
+    buyUrl: 'https://square.link/u/NJUScIvd',
     category: 'Hangboard — Classic',
     filterTags: ['hangboards', 'classic'],
     badge: 'new',
@@ -258,7 +265,8 @@ const ASTUR_PRODUCTS = {
     tagline: '60cm carbon core fingerboard with modular Forge blocks',
     url: '/shop/products/nomad-forge.html',
     image: '/assets/images/products/ergo-edges-pro-placeholder.jpg',
-    price: '[PRICE]',
+    price: '55 - £60',
+    buyUrl: 'https://square.link/u/afO06iUc',
     category: 'Hangboard — Forge',
     filterTags: ['hangboards', 'forge'],
     visible: false,
@@ -292,7 +300,8 @@ const ASTUR_PRODUCTS = {
     tagline: 'No-drill pull-up bar interface for doorway training',
     url: '/shop/products/threshold.html',
     image: '/assets/images/products/wall-mount-placeholder.jpg',
-    price: '[PRICE]',
+    price: '50',
+    buyUrl: '',
     category: 'Mount System',
     filterTags: ['hangboards'],
     visible: false,
@@ -325,7 +334,8 @@ const ASTUR_PRODUCTS = {
     tagline: 'Astur Climbing branded tee — 100% organic cotton',
     url: '/shop/products/founders-ridge-tshirt.html',
     image: '/assets/images/products/apparel&merch/tshirts/foundersRidge/BlackFrontBack.webp',
-    price: '[PRICE]',
+    price: '30',
+    buyUrl: 'https://square.link/u/isoOzffu',
     category: 'Apparel',
     filterTags: ['apparel'],
     badge: 'new',
@@ -362,7 +372,8 @@ const ASTUR_PRODUCTS = {
     tagline: '3D printed finger support splints for pulley injury recovery',
     url: '/shop/products/pulley-splints.html',
     image: '/assets/images/products/PSS/pss-3-square.webp',
-    price: '[PRICE]',
+    price: '15 -£20',
+    buyUrl: 'https://square.link/u/NVo32vJT',
     category: 'Accessories',
     filterTags: ['accessories'],
     badge: 'popular',
@@ -517,7 +528,7 @@ function renderProductPage() {
           <div class="col-md-5">
             <div style="background:var(--sage-green-10);padding:30px;border-radius:8px;position:sticky;top:100px;">
               <div class="product-detail-price" style="margin-bottom:20px;">£${p.price}</div>
-              <a href="https://asturclimbing.square.site" class="btn btn-primary btn-lg btn-round btn-add-to-cart" target="_blank" style="width:100%;margin-bottom:20px;">Add to Cart</a>
+              <a href="${p.buyUrl || 'https://asturclimbing.square.site'}" class="btn btn-primary btn-lg btn-round btn-add-to-cart" target="_blank" style="width:100%;margin-bottom:20px;">Buy Now</a>
               <div style="padding:15px;background:var(--summit-white);border-radius:4px;margin-bottom:15px;">
                 <p style="margin:0;font-size:0.95rem;"><i class="fas fa-truck" style="color:var(--sage-green);margin-right:10px;"></i><strong>Free UK Shipping</strong> on orders over £50</p>
               </div>

@@ -376,7 +376,7 @@ const ASTUR_PRODUCTS = {
       { src: '/assets/images/products/apparel&merch/tshirts/foundersRidge/lightGreen.webp', alt: 'Founders Ridge T-Shirt — Light Green' },
       { src: '/assets/images/products/apparel&merch/tshirts/foundersRidge/pink.webp', alt: 'Founders Ridge T-Shirt — Pink' },
     ],
-    relatedSkus: ['AC-SPL', 'LC-D2010', 'LE-VDE'],
+    relatedSkus: ['AC-SPL', 'LC-D2010', 'LE-VDE','FB-NMC'],
   },
 
   'AC-SPL': {

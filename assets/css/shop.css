@@ -132,7 +132,7 @@
 
 @media (hover: hover) {
   .filter-btn:hover {
-    background-color: var(--sage-green-20);
+    background-color: hsl(87, 20%, 90%);
     color: var(--astur-dark);
   }
 

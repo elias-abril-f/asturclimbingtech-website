@@ -689,6 +689,40 @@ label {
   color: var(--sage-green);
   font-weight: 600;
 }
+
+.main-product-features-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.main-product-features-list li {
+  padding: 12px 0;
+  padding-left: 5px;
+  position: relative;
+  font-family: var(--font-body);
+  color: var(--astur-dark);
+  border-bottom: 1px solid var(--sage-green-10);
+}
+
+.main-product-features-list li:last-child {
+  border-bottom: none;
+}
+
+.main-product-features-list li::before {
+  content: "▸";
+  position: absolute;
+  left: -15px;
+  top: -2px;
+  color: var(--sage-green);
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.main-product-features-list li strong {
+  color: var(--sage-green);
+  font-weight: 600;
+}
 /* Footer Overrides */
 .footer {
   background-color: var(--astur-dark) !important;

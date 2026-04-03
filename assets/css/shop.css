@@ -540,7 +540,7 @@
     font-size: 1.5rem;
   }
 
-  /* Product page header: stack back link above title on mobile */
+  /* Product page header: stack back link above title at ≤767px */
   .product-page-header {
     flex-direction: column;
     align-items: flex-start;

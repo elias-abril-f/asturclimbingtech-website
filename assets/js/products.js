@@ -491,10 +491,10 @@ function renderProductPage() {
 
         <div class="row">
           <div class="col-sm-12">
-            <div style="display:flex;align-items:center;margin-bottom:15px;">
-              <div style="flex:1;"><a href="/shop/" style="color:var(--sage-green);">← Back to Shop</a></div>
-              <div style="flex:0 0 auto;"><h1 class="font-alt" style="font-size:2.5rem;margin:0;text-transform:uppercase;">${p.name}</h1></div>
-              <div style="flex:1;"></div>
+            <div class="product-page-header">
+              <div class="product-back-link"><a href="/shop/" style="color:var(--sage-green);">← Back to Shop</a></div>
+              <div class="product-page-title"><h1 class="font-alt" style="font-size:2.5rem;margin:0;text-transform:uppercase;">${p.name}</h1></div>
+              <div class="product-header-spacer"></div>
             </div>
             <p style="font-size:1.125rem;color:var(--sage-green);margin-bottom:40px;text-align:center;">${p.tagline}</p>
           </div>

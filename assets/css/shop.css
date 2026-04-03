@@ -140,6 +140,15 @@
   color: var(--summit-white);
 }
 
+.filter-btn:focus {
+  outline: 2px solid var(--sage-green);
+  outline-offset: 2px;
+}
+
+.filter-btn:focus:not(:focus-visible) {
+  outline: none;
+}
+
 /* Product Grid */
 .product-grid {
   display: flex;

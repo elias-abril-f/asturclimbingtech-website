@@ -125,28 +125,26 @@
   font-weight: 600;
 }
 
-.filter-btn:hover {
-  background-color: var(--sage-green-20);
-  color: var(--astur-dark);
-}
-
 .filter-btn.active {
   background-color: var(--sage-green);
   color: var(--summit-white);
 }
 
-.filter-btn.active:hover {
-  background-color: var(--sage-green);
-  color: var(--summit-white);
+@media (hover: hover) {
+  .filter-btn:hover {
+    background-color: var(--sage-green-20);
+    color: var(--astur-dark);
+  }
+
+  .filter-btn.active:hover {
+    background-color: var(--sage-green);
+    color: var(--summit-white);
+  }
 }
 
-.filter-btn:focus {
+.filter-btn:focus-visible {
   outline: 2px solid var(--sage-green);
   outline-offset: 2px;
-}
-
-.filter-btn:focus:not(:focus-visible) {
-  outline: none;
 }
 
 /* Product Grid */

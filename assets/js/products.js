@@ -578,8 +578,8 @@ function renderProductPage() {
           </div>
           <div class="col-md-5">
             <div style="background:var(--sage-green-10);padding:30px;border-radius:8px;position:sticky;top:100px;">
-              <div class="product-detail-price" style="margin-bottom:20px;">£${p.price}</div>
-              <a href="${p.buyUrl || 'https://asturclimbing.square.site'}" class="btn btn-primary btn-lg btn-round btn-add-to-cart" target="_blank" style="width:100%;margin-bottom:20px;">Buy Now</a>
+              <div class="product-detail-price" style="text-align:center;margin-bottom:12px;">£${p.price}</div>
+              <a href="${p.buyUrl || 'https://asturclimbing.square.site'}" class="btn btn-primary btn-lg btn-round btn-add-to-cart" target="_blank" style="width:100%;display:block;margin:0 0 20px;">Buy Now</a>
               <div style="padding:15px;background:var(--summit-white);border-radius:4px;margin-bottom:15px;">
                 <p style="margin:0;font-size:0.95rem;"><i class="fas fa-truck" style="color:var(--sage-green);margin-right:10px;"></i><strong>Free UK Shipping</strong> on orders over £50</p>
               </div>

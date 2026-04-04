@@ -416,7 +416,22 @@ description: [
     ],
     specs: [
       { label: 'SKU', value: 'AC-SPL' },
-      { label: 'Sizes', value: '10mm to 19mm (finger height, nail side to palm side)' },
+      { label: 'Sizing measured by', value: 'Finger height, nail side to palm side' },
+      {
+        label: 'Size chart',
+        value: [
+          { height: '10mm', width: '15mm', circumference: '41mm' },
+          { height: '11mm', width: '16mm', circumference: '44mm' },
+          { height: '12mm', width: '17mm', circumference: '47.5mm' },
+          { height: '13mm', width: '18mm', circumference: '50.5mm' },
+          { height: '14mm', width: '19mm', circumference: '53.5mm' },
+          { height: '15mm', width: '20mm', circumference: '56.5mm' },
+          { height: '16mm', width: '21mm', circumference: '59.5mm' },
+          { height: '17mm', width: '22mm', circumference: '62.5mm' },
+          { height: '18mm', width: '23mm', circumference: '65.5mm' },
+          { height: '19mm', width: '24mm', circumference: '68.5mm' },
+        ],
+      },
       { label: 'Small Set', value: 'Sizes 10-14mm (5 splints)' },
       { label: 'Large Set', value: 'Sizes 15-19mm (5 splints)' },
       { label: 'Custom Set', value: '5 splints in chosen sizes, specify in order notes' },
@@ -509,9 +524,17 @@ function renderProductPage() {
     `<li><strong>${f.title}:</strong> ${f.text}</li>`
   ).join('');
 
-  const specsHTML = (p.specs || []).map(s =>
-    `<div class="spec-row"><span class="spec-label">${s.label}</span><span class="spec-value">${s.value}</span></div>`
-  ).join('');
+  const specsHTML = (p.specs || []).map(s => {
+    if (Array.isArray(s.value)) {
+      const headers = Object.keys(s.value[0]);
+      const thead = `<tr>${headers.map(h => `<th>${h.charAt(0).toUpperCase() + h.slice(1)}</th>`).join('')}</tr>`;
+      const tbody = s.value.map(row =>
+        `<tr>${headers.map(h => `<td>${row[h]}</td>`).join('')}</tr>`
+      ).join('');
+      return `<div class="spec-row spec-row--table"><span class="spec-label">${s.label}</span><span class="spec-value"><table class="size-chart-table"><thead>${thead}</thead><tbody>${tbody}</tbody></table></span></div>`;
+    }
+    return `<div class="spec-row"><span class="spec-label">${s.label}</span><span class="spec-value">${s.value}</span></div>`;
+  }).join('');
 
   root.innerHTML = `
     <section class="module" style="padding-top:80px;padding-bottom:20px;">

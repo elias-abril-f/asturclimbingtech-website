@@ -168,7 +168,7 @@ const ASTUR_PRODUCTS = {
   'LE-O20': {
     name: 'Ergo Offset',
     tagline: '20mm stepped + offset hardwood edge for technical training',
-    url: '/shop/products/ergo-Offset.html',
+    url: '/shop/products/ergo-offset.html',
     image: '/assets/images/products/Ergo/Offset/Black/7OK4884_square.webp',
     price: '40',
     buyUrl: 'https://square.link/u/EVqhd3uu',

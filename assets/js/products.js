@@ -40,7 +40,8 @@ const ASTUR_PRODUCTS = {
       { label: 'SKU', value: 'LC-D2010' },
       { label: 'Edge Depths', value: '20 mm edge & 10 mm edge (5 mm roundover on each) and jug hold' },
       { label: 'Material', value: 'Solid Hardwood' },
-      { label: 'Dimensions', value: '25 × 44 × 120 mm | Weight: 75 g | Load rating: 150 kg | Material: Natural oak' },
+      { label: 'Dimensions', value: '25 × 44 × 120 mm' },
+      { label: 'Weight', value: '75g' },
     ],
     gallery: [
       { src: '/assets/images/products/Classic/Classic2010/Classic2010-Main.webp', alt: 'Classic Duo main view' },

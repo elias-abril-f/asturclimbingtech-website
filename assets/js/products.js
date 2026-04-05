@@ -451,6 +451,38 @@ description: [
 
 const BADGE_LABELS = { new: 'New', popular: 'Popular', save: 'Sale' };
 
+// ─── Shop Schema ─────────────────────────────────────────────────────────────
+
+/**
+ * Injects an ItemList JSON-LD schema into the shop page <head>.
+ * Lists all visible products so Google can surface them as rich results.
+ */
+function renderShopSchema() {
+  var BASE = 'https://asturclimbing.com';
+  var items = Object.values(ASTUR_PRODUCTS)
+    .filter(function (p) { return p.visible !== false; })
+    .map(function (p, i) {
+      return {
+        '@type': 'ListItem',
+        'position': i + 1,
+        'url': BASE + p.url,
+        'name': p.name
+      };
+    });
+
+  var script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.text = JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    'name': 'Astur Climbing — Climbing Training Equipment',
+    'description': 'Premium climbing training equipment including hardwood lifting blocks, ergo hangboards, and finger training tools.',
+    'url': BASE + '/shop/',
+    'itemListElement': items
+  });
+  document.head.appendChild(script);
+}
+
 // ─── Shop Grid ───────────────────────────────────────────────────────────────
 
 /**
@@ -557,23 +589,35 @@ function renderProductPage() {
   setMeta('name', 'twitter:description', descText);
   setMeta('name', 'twitter:image',       imgUrl);
 
-  // Product JSON-LD schema
+  // Product + BreadcrumbList JSON-LD schema
   var schema = document.createElement('script');
   schema.type = 'application/ld+json';
   schema.text = JSON.stringify({
     '@context': 'https://schema.org',
-    '@type': 'Product',
-    'name': p.name,
-    'description': p.tagline,
-    'image': imgUrl,
-    'brand': { '@type': 'Brand', 'name': 'Astur Climbing' },
-    'offers': {
-      '@type': 'Offer',
-      'priceCurrency': 'GBP',
-      'price': p.price,
-      'availability': 'https://schema.org/InStock',
-      'url': pageUrl
-    }
+    '@graph': [
+      {
+        '@type': 'Product',
+        'name': p.name,
+        'description': p.tagline,
+        'image': imgUrl,
+        'brand': { '@type': 'Brand', 'name': 'Astur Climbing' },
+        'offers': {
+          '@type': 'Offer',
+          'priceCurrency': 'GBP',
+          'price': p.price,
+          'availability': 'https://schema.org/InStock',
+          'url': pageUrl
+        }
+      },
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Home',  'item': BASE_URL + '/' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Shop',  'item': BASE_URL + '/shop/' },
+          { '@type': 'ListItem', 'position': 3, 'name': p.name,  'item': pageUrl }
+        ]
+      }
+    ]
   });
   document.head.appendChild(schema);
 

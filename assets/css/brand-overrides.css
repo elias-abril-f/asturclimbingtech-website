@@ -188,6 +188,7 @@ section.bg-dark {
 .module-subtitle {
   color: var(--sage-green);
   font-family: var(--font-body);
+  font-size: var(--font-size-body-screen);
 }
 
 /* ========================================

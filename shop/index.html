@@ -11,6 +11,27 @@
     />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Static ItemList schema — ensures Google sees products even without JS -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Astur Climbing — Climbing Training Equipment",
+      "url": "https://asturclimbing.com/shop/",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Classic Duo",           "url": "https://asturclimbing.com/shop/products/classic-duo/" },
+        { "@type": "ListItem", "position": 2, "name": "Ergo VDE",              "url": "https://asturclimbing.com/shop/products/ergo-vde/" },
+        { "@type": "ListItem", "position": 3, "name": "Ergo Step",             "url": "https://asturclimbing.com/shop/products/ergo-step/" },
+        { "@type": "ListItem", "position": 4, "name": "Ergo Offset",           "url": "https://asturclimbing.com/shop/products/ergo-offset/" },
+        { "@type": "ListItem", "position": 5, "name": "Forge Block",           "url": "https://asturclimbing.com/shop/products/forge-block/" },
+        { "@type": "ListItem", "position": 6, "name": "Nomad Classic",         "url": "https://asturclimbing.com/shop/products/nomad-classic/" },
+        { "@type": "ListItem", "position": 7, "name": "Founders Ridge T-Shirt","url": "https://asturclimbing.com/shop/products/founders-ridge-tshirt/" },
+        { "@type": "ListItem", "position": 8, "name": "Pulley Splints",        "url": "https://asturclimbing.com/shop/products/pulley-splints/" }
+      ]
+    }
+    </script>
 
     <!-- Canonical & Social -->
     <link rel="canonical" href="https://asturclimbing.com/shop/" />
@@ -79,36 +100,21 @@
     </div>
 
     <!-- NAVIGATION -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-      <div class="container">
+        <nav class="navbar navbar-custom navbar-transparent navbar-fixed-top one-page">
+      <div class="container" style="width: 100%; padding-left: 50px; padding-right: 50px">
         <div class="navbar-header">
-          <button
-            class="navbar-toggle"
-            type="button"
-            data-toggle="collapse"
-            data-target="#custom-collapse"
-          >
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">Astur Climbing</a>
+          <a class="navbar-brand hide-custom" href="/">Astur Climbing</a>
         </div>
         <div class="collapse navbar-collapse" id="custom-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/#products">Products</a></li>
-            <li><a href="/#assessments">Assessments</a></li>
-            <li><a href="/#about">About</a></li>
-            <li class="active"><a href="/shop/">Shop</a></li>
-            <li>
-              <a
-                href="https://book.squareup.com/appointments/6hqxcr5qkjc8wm/location/LWR1GPZSGH6B0"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Book Now</a
-              >
-            </li>
+            <li class="active"><a class="section-scroll" href="/shop/">Shop</a></li>
+            <li><a class="section-scroll" href="https://book.squareup.com/appointments/6hqxcr5qkjc8wm/location/LWR1GPZSGH6B0/services" target="_blank" rel="noopener noreferrer">Book Now</a></li>
+            <li><a class="section-scroll" href="/#contact">Contact</a></li>
+            <li><a class="section-scroll" href="/guides/">Guides</a></li>
           </ul>
         </div>
       </div>
@@ -119,10 +125,10 @@
       <div class="shop-hero-inner">
         <div class="shop-hero-text">
           <h1 class="shop-hero-title font-alt">
-            Training Gear<br />Built to Last
+            Climbing Training<br />Equipment &amp; Hangboards
           </h1>
           <p class="shop-hero-subtitle font-serif">
-            Premium lifting edges designed for serious climbers.
+            Premium lifting edges and hangboards built to last.
           </p>
           <a href="#products" class="btn btn-primary btn-round"
             >Shop All Products</a
@@ -225,12 +231,10 @@
         <div class="row">
           <div class="col-sm-12">
             <p class="copyright font-alt">
-              &copy; 2024&nbsp;Astur Climbing, All Rights Reserved
+              &copy; 2026&nbsp;Astur Climbing, All Rights Reserved
             </p>
             <div class="footer-social-links">
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="https://www.instagram.com/asturclimbing/" target="_blank" rel="noopener noreferrer" aria-label="Astur Climbing on Instagram"><i class="fab fa-instagram"></i></a>
             </div>
           </div>
         </div>

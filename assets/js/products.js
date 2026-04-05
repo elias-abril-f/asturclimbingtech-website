@@ -44,13 +44,13 @@ const ASTUR_PRODUCTS = {
       { label: 'Weight', value: '75g' },
     ],
     gallery: [
-      { src: '/assets/images/products/Classic/Classic2010/Classic2010-Main.webp', alt: 'Classic Duo main view' },
-      { src: '/assets/images/products/Classic/Classic2010/Square/actionInclineSquare.webp', alt: 'Classic Duo view 1' },
-      { src: '/assets/images/products/Classic/Classic2010/Square/2010-2-square.webp', alt: 'Classic Duo view 2' },
-      { src: '/assets/images/products/Classic/Classic2010/Square/2010-1-square.webp', alt: 'Classic Duo view 3' },
-      { src: '/assets/images/products/Classic/Classic2010/Square/2010-3-square.webp', alt: 'Classic Duo view 4' },
-      { src: '/assets/images/products/Classic/Classic2010/Square/2010-4-square.webp', alt: 'Classic Duo view 5' },
-      { src: '/assets/images/products/Classic/Classic2010/Square/2010-5-square.webp', alt: 'Classic Duo in use' },
+      { src: '/assets/images/products/Classic/Classic2010/Classic2010-Main.webp', alt: 'Classic Duo portable hangboard — front view showing both oak edges' },
+      { src: '/assets/images/products/Classic/Classic2010/Square/actionInclineSquare.webp', alt: 'Classic Duo 20mm and 10mm oak edges — incline action shot' },
+      { src: '/assets/images/products/Classic/Classic2010/Square/2010-2-square.webp', alt: 'Classic Duo — top profile showing dual edge depths' },
+      { src: '/assets/images/products/Classic/Classic2010/Square/2010-1-square.webp', alt: 'Classic Duo — side profile with integrated jug hold' },
+      { src: '/assets/images/products/Classic/Classic2010/Square/2010-3-square.webp', alt: 'Classic Duo — close-up of 20mm oak edge surface texture' },
+      { src: '/assets/images/products/Classic/Classic2010/Square/2010-4-square.webp', alt: 'Classic Duo — close-up of 10mm oak edge' },
+      { src: '/assets/images/products/Classic/Classic2010/Square/2010-5-square.webp', alt: 'Classic Duo in use — climber hanging on oak edge' },
     ],
     relatedSkus: ['LE-VDE', 'LF-BLK', 'FB-NMC', 'AC-SPL'],
   },
@@ -120,12 +120,12 @@ const ASTUR_PRODUCTS = {
 
     ],
     gallery: [
-      { src: '/assets/images/products/Ergo/VDE20/2020-1-square.webp', alt: 'Ergo VDE view 1' },
-      { src: '/assets/images/products/Ergo/VDE20/2020-2-square.webp', alt: 'Ergo VDE view 2' },
-      { src: '/assets/images/products/Ergo/VDE20/2020-3-square.webp', alt: 'Ergo VDE view 3' },
-      { src: '/assets/images/products/Ergo/VDE20/2020-4-square.webp', alt: 'Ergo VDE view 4' },
-      { src: '/assets/images/products/Ergo/VDE20/2020-5-square.webp', alt: 'Ergo VDE view 5' },
-      { src: '/assets/images/products/Ergo/VDE20/Crag1Square.webp', alt: 'Ergo VDE at the crag' },
+      { src: '/assets/images/products/Ergo/VDE20/2020-1-square.webp', alt: 'Ergo VDE — front view showing straight oak edge and curved ergonomic edge' },
+      { src: '/assets/images/products/Ergo/VDE20/2020-2-square.webp', alt: 'Ergo VDE — top profile comparing straight and curved edge depths' },
+      { src: '/assets/images/products/Ergo/VDE20/2020-3-square.webp', alt: 'Ergo VDE — close-up of 20mm curved ergonomic edge' },
+      { src: '/assets/images/products/Ergo/VDE20/2020-4-square.webp', alt: 'Ergo VDE — close-up of 20mm straight oak edge' },
+      { src: '/assets/images/products/Ergo/VDE20/2020-5-square.webp', alt: 'Ergo VDE — integrated jug hold on rounded back' },
+      { src: '/assets/images/products/Ergo/VDE20/Crag1Square.webp', alt: 'Ergo VDE clipped to chalk bag at the crag' },
     ],
     relatedSkus: ['LE-S20', 'LE-O20', 'LC-D2010', 'AC-SPL'],
   },
@@ -152,16 +152,16 @@ const ASTUR_PRODUCTS = {
       { title: 'Available in black and white', text: 'Two colourway options with identical geometry and performance' },
     ],
     specs: [
-      { label: 'SKU', value: 'LE-STP' },
+      { label: 'SKU', value: 'LE-S20' },
       { label: 'Edge Depth', value: '20mm across all steps' },
       { label: 'Contact Surface', value: 'Natural oak' },
       { label: 'Step Profile', value: 'Matched to index, middle, ring, and little finger lengths' },
       { label: 'Available In', value: 'Black, White' },
     ],
     gallery: [
-      { src: '/assets/images/products/Ergo/Stepped/7OK4902_square.webp', alt: 'Ergo Step view 1' },
-      { src: '/assets/images/products/Ergo/Stepped/7OK4903_square.webp', alt: 'Ergo Step view 2' },
-      { src: '/assets/images/products/Ergo/Stepped/7OK4905_square.webp', alt: 'Ergo Step view 3' },
+      { src: '/assets/images/products/Ergo/Stepped/7OK4902_square.webp', alt: 'Ergo Step — front view showing finger-length stepped oak edge profile' },
+      { src: '/assets/images/products/Ergo/Stepped/7OK4903_square.webp', alt: 'Ergo Step — top-down view of stepped edge positions for each finger' },
+      { src: '/assets/images/products/Ergo/Stepped/7OK4905_square.webp', alt: 'Ergo Step — side profile showing 20mm depth across all steps' },
     ],
     relatedSkus: ['LE-VDE', 'LE-O20', 'LC-D2010', 'AC-SPL'],
   },
@@ -241,7 +241,7 @@ const ASTUR_PRODUCTS = {
       { src: '/assets/images/products/Forge/FrontWhite-square.webp', alt: 'Forge Block white front' },
       { src: '/assets/images/products/Forge/ActionWhite-square.webp', alt: 'Forge Block white in use' },
     ],
-    relatedSkus: ['LE-O20', 'LF-BLK', 'LC-D2010', 'AC-SPL'],
+    relatedSkus: ['LE-O20', 'FB-NMC', 'LC-D2010', 'AC-SPL'],
   },
 
   'FB-NMC': {
@@ -359,7 +359,7 @@ description: [
     name: 'Founders Ridge T-Shirt',
     tagline: 'Astur Climbing branded tee — 100% organic cotton',
     url: '/shop/products/founders-ridge-tshirt/',
-    image: '/assets/images/products/apparel&merch/tshirts/foundersRidge/BlackFrontBack.webp',
+    image: '/assets/images/products/apparel-merch/tshirts/foundersRidge/BlackFrontBack.webp',
     price: '30',
     buyUrl: 'https://square.link/u/isoOzffu',
     category: 'Apparel',
@@ -383,12 +383,12 @@ description: [
       { label: 'Construction', value: 'Pre-shrunk, side-seamed, shoulder-to-shoulder taping' },
     ],
     gallery: [
-      { src: '/assets/images/products/apparel&merch/tshirts/foundersRidge/BlackFrontBack.webp', alt: 'Founders Ridge T-Shirt — Black front & back' },
-      { src: '/assets/images/products/apparel&merch/tshirts/foundersRidge/black.webp', alt: 'Founders Ridge T-Shirt — Black' },
-      { src: '/assets/images/products/apparel&merch/tshirts/foundersRidge/white.webp', alt: 'Founders Ridge T-Shirt — White' },
-      { src: '/assets/images/products/apparel&merch/tshirts/foundersRidge/darkGreen.webp', alt: 'Founders Ridge T-Shirt — Dark Green' },
-      { src: '/assets/images/products/apparel&merch/tshirts/foundersRidge/lightGreen.webp', alt: 'Founders Ridge T-Shirt — Light Green' },
-      { src: '/assets/images/products/apparel&merch/tshirts/foundersRidge/pink.webp', alt: 'Founders Ridge T-Shirt — Pink' },
+      { src: '/assets/images/products/apparel-merch/tshirts/foundersRidge/BlackFrontBack.webp', alt: 'Founders Ridge T-Shirt — Black front & back' },
+      { src: '/assets/images/products/apparel-merch/tshirts/foundersRidge/black.webp', alt: 'Founders Ridge T-Shirt — Black' },
+      { src: '/assets/images/products/apparel-merch/tshirts/foundersRidge/white.webp', alt: 'Founders Ridge T-Shirt — White' },
+      { src: '/assets/images/products/apparel-merch/tshirts/foundersRidge/darkGreen.webp', alt: 'Founders Ridge T-Shirt — Dark Green' },
+      { src: '/assets/images/products/apparel-merch/tshirts/foundersRidge/lightGreen.webp', alt: 'Founders Ridge T-Shirt — Light Green' },
+      { src: '/assets/images/products/apparel-merch/tshirts/foundersRidge/pink.webp', alt: 'Founders Ridge T-Shirt — Pink' },
     ],
     relatedSkus: ['AC-SPL', 'LC-D2010', 'LE-VDE','FB-NMC'],
   },
@@ -438,10 +438,10 @@ description: [
       { label: 'Custom Set', value: '5 splints in chosen sizes, specify in order notes' },
     ],
     gallery: [
-      { src: '/assets/images/products/PSS/pss-1-square.webp', alt: 'Pulley Splints view 1' },
-      { src: '/assets/images/products/PSS/pss-2-square.webp', alt: 'Pulley Splints view 2' },
-      { src: '/assets/images/products/PSS/pss-3-square.webp', alt: 'Pulley Splints view 3' },
-      { src: '/assets/images/products/PSS/pss-4-square.webp', alt: 'Pulley Splints view 4' },
+      { src: '/assets/images/products/PSS/pss-1-square.webp', alt: 'Astur Pulley Splints — 3D printed A2 and A4 pulley injury support for climbers' },
+      { src: '/assets/images/products/PSS/pss-2-square.webp', alt: 'Pulley Splints — worn on finger showing targeted compression placement' },
+      { src: '/assets/images/products/PSS/pss-3-square.webp', alt: 'Pulley Splints — side view showing lightweight breathable design' },
+      { src: '/assets/images/products/PSS/pss-4-square.webp', alt: 'Pulley Splints — size range from 10mm to 19mm finger height' },
     ],
     relatedSkus: ['LC-D2010', 'LE-VDE', 'FB-NMC', 'LF-BLK'],
   },
@@ -598,16 +598,31 @@ function renderProductPage() {
       {
         '@type': 'Product',
         'name': p.name,
-        'description': p.tagline,
+        'sku': sku,
+        'description': (p.description && p.description[0]) ? p.description[0] : p.tagline,
         'image': imgUrl,
         'brand': { '@type': 'Brand', 'name': 'Astur Climbing' },
-        'offers': {
-          '@type': 'Offer',
-          'priceCurrency': 'GBP',
-          'price': p.price,
-          'availability': 'https://schema.org/InStock',
-          'url': pageUrl
-        }
+        'offers': (function() {
+          var priceStr = String(p.price);
+          var parts = priceStr.replace(/£/g, '').split('-').map(function(s) { return parseFloat(s.trim()); });
+          if (parts.length === 2 && !isNaN(parts[0]) && !isNaN(parts[1])) {
+            return {
+              '@type': 'AggregateOffer',
+              'priceCurrency': 'GBP',
+              'lowPrice': parts[0],
+              'highPrice': parts[1],
+              'availability': 'https://schema.org/InStock',
+              'url': pageUrl
+            };
+          }
+          return {
+            '@type': 'Offer',
+            'priceCurrency': 'GBP',
+            'price': parseFloat(priceStr.replace(/£/g, '')) || priceStr,
+            'availability': 'https://schema.org/InStock',
+            'url': pageUrl
+          };
+        })()
       },
       {
         '@type': 'BreadcrumbList',

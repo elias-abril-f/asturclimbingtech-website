@@ -16,77 +16,63 @@
   </url>
 
   <url>
-    <loc>https://asturclimbing.com/shop/products/classic-duo.html</loc>
+    <loc>https://asturclimbing.com/guides/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://asturclimbing.com/shop/products/classic-duo/</loc>
     <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://asturclimbing.com/shop/products/classic-hybrid.html</loc>
+    <loc>https://asturclimbing.com/shop/products/ergo-offset/</loc>
     <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://asturclimbing.com/shop/products/ergo-offset.html</loc>
+    <loc>https://asturclimbing.com/shop/products/ergo-step/</loc>
     <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://asturclimbing.com/shop/products/ergo-step.html</loc>
+    <loc>https://asturclimbing.com/shop/products/ergo-vde/</loc>
     <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://asturclimbing.com/shop/products/ergo-vde.html</loc>
+    <loc>https://asturclimbing.com/shop/products/forge-block/</loc>
     <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://asturclimbing.com/shop/products/forge-block.html</loc>
-    <lastmod>2026-04-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://asturclimbing.com/shop/products/founders-ridge-tshirt.html</loc>
+    <loc>https://asturclimbing.com/shop/products/founders-ridge-tshirt/</loc>
     <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://asturclimbing.com/shop/products/nomad-classic.html</loc>
+    <loc>https://asturclimbing.com/shop/products/nomad-classic/</loc>
     <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://asturclimbing.com/shop/products/nomad-forge.html</loc>
-    <lastmod>2026-04-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://asturclimbing.com/shop/products/pulley-splints.html</loc>
-    <lastmod>2026-04-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://asturclimbing.com/shop/products/threshold.html</loc>
+    <loc>https://asturclimbing.com/shop/products/pulley-splints/</loc>
     <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

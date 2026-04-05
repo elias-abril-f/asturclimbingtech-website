@@ -41,7 +41,7 @@
          * Initialization General Scripts for all pages
          /* ---------------------------------------------- */
 
-        var homeSection = $('.home-section'),
+        var homeSection = $('.home-section, .shop-hero, .support-hero'),
             navbar      = $('.navbar-custom'),
             navHeight   = navbar.height(),
             worksgrid   = $('#works-grid'),
@@ -153,11 +153,17 @@
 
         function navbarAnimation(navbar, homeSection, navHeight) {
             var topScroll = $(window).scrollTop();
-            if (navbar.length > 0 && homeSection.length > 0) {
-                if(topScroll >= navHeight) {
-                    navbar.removeClass('navbar-transparent');
+            if (navbar.length > 0) {
+                if (homeSection.length > 0) {
+                    // If there's a hero section, make navbar transparent until scrolled past it
+                    if(topScroll >= navHeight) {
+                        navbar.removeClass('navbar-transparent');
+                    } else {
+                        navbar.addClass('navbar-transparent');
+                    }
                 } else {
-                    navbar.addClass('navbar-transparent');
+                    // If no hero section, make navbar solid from the start
+                    navbar.removeClass('navbar-transparent');
                 }
             }
         }

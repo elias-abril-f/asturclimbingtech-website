@@ -286,60 +286,6 @@
     <!-- Brand Style Overrides - Astur Climbing 2026 -->
     <link href="assets/css/brand-overrides.css" rel="stylesheet" />
 
-    <style>
-      .resource-card {
-        background: var(--summit-white);
-        border: 2px solid var(--sage-green-20);
-        border-radius: 8px;
-        padding: 36px 28px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-      }
-      .resource-card:hover {
-        transform: translateY(-6px);
-        border-color: var(--sage-green);
-        box-shadow: 0 12px 32px rgba(132, 142, 120, 0.18);
-      }
-      .resource-card .card-icon {
-        font-size: 2.2rem;
-        color: var(--sage-green);
-        margin-bottom: 20px;
-      }
-      .resource-card h3 {
-        font-size: 1.1rem;
-        color: var(--astur-dark);
-        margin-bottom: 12px;
-      }
-      .resource-card p {
-        font-size: 0.95rem;
-        color: #555;
-        line-height: 1.7;
-        flex-grow: 1;
-        margin-bottom: 24px;
-      }
-      .resource-card .card-tag {
-        display: inline-block;
-        font-family: var(--font-display);
-        font-size: 0.65rem;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-        padding: 3px 10px;
-        border-radius: 3px;
-        margin-bottom: 18px;
-      }
-      .tag-app {
-        background: var(--sage-green-10);
-        color: var(--sage-green);
-        border: 1px solid var(--sage-green-40);
-      }
-      .tag-guide {
-        background: var(--crimson-cliff-10);
-        color: var(--crimson-cliff);
-        border: 1px solid var(--crimson-cliff-40);
-      }
-    </style>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
     <link
       rel="stylesheet"
@@ -670,47 +616,75 @@
               <div class="col-sm-8 col-sm-offset-2 text-center">
                 <h2 class="module-title font-alt">Tools &amp; Guides</h2>
                 <div class="module-subtitle font-serif">
-                  Free apps and training guides to help you train smarter between assessments.
+                  Free apps and training guides to help you train smarter
+                  between assessments.
                 </div>
               </div>
             </div>
             <div class="row">
-
               <!-- Astur Timer -->
-              <div class="col-xs-12 col-sm-4" style="display: flex;">
+              <div class="col-xs-12 col-sm-4" style="display: flex">
                 <div class="resource-card">
                   <span class="card-tag tag-app">App</span>
-                  <div class="card-icon"><i class="fa-solid fa-stopwatch"></i></div>
+                  <div class="card-icon">
+                    <i class="fa-solid fa-stopwatch"></i>
+                  </div>
                   <h3>Astur Timer</h3>
-                  <p>Structured interval timer for hangboard sessions. Set your work/rest protocol once and train completely hands-free.</p>
-                  <a href="https://timer.asturclimbing.com" target="_blank" rel="noopener noreferrer"
-                     class="btn btn-primary btn-round">Open App</a>
+                  <p>
+                    Structured interval timer for hangboard sessions. Set your
+                    work/rest protocol once and train completely hands-free.
+                  </p>
+                  <a
+                    href="https://timer.asturclimbing.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary btn-round"
+                    >Open App</a
+                  >
                 </div>
               </div>
 
               <!-- Training Guides -->
-              <div class="col-xs-12 col-sm-4" style="display: flex;">
+              <div class="col-xs-12 col-sm-4" style="display: flex">
                 <div class="resource-card">
                   <span class="card-tag tag-guide">Guides</span>
-                  <div class="card-icon"><i class="fa-solid fa-book-open"></i></div>
+                  <div class="card-icon">
+                    <i class="fa-solid fa-book-open"></i>
+                  </div>
                   <h3>Training Guides</h3>
-                  <p>How to fingerboard safely, how to read your assessment results, and how to structure your training block between sessions.</p>
-                  <a href="/guides/" class="btn btn-primary btn-round">View Guides</a>
+                  <p>
+                    How to fingerboard safely, how to read your assessment
+                    results, and how to structure your training block between
+                    sessions.
+                  </p>
+                  <a href="/guides/" class="btn btn-primary btn-round"
+                    >View Guides</a
+                  >
                 </div>
               </div>
 
               <!-- Astur Logger -->
-              <div class="col-xs-12 col-sm-4" style="display: flex;">
+              <div class="col-xs-12 col-sm-4" style="display: flex">
                 <div class="resource-card">
                   <span class="card-tag tag-app">App</span>
-                  <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+                  <div class="card-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                  </div>
                   <h3>Astur Logger</h3>
-                  <p>Log your finger training sessions, track load over time, and spot trends across weeks and cycles before your next assessment.</p>
-                  <a href="https://logger.asturclimbing.com" target="_blank" rel="noopener noreferrer"
-                     class="btn btn-primary btn-round">Open App</a>
+                  <p>
+                    Log your finger training sessions, track load over time, and
+                    spot trends across weeks and cycles before your next
+                    assessment.
+                  </p>
+                  <a
+                    href="https://logger.asturclimbing.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary btn-round"
+                    >Open App</a
+                  >
                 </div>
               </div>
-
             </div>
           </div>
         </section>
@@ -750,23 +724,24 @@
                   <p>
                     Every Astur product starts from a single question: what does
                     a climber actually need? Our hangboards, lifting edges, and
-                    training tools are made from premium hardwoods, shaped around
-                    real finger ergonomics, and sized to go wherever you train —
-                    home wall, commercial gym, or the crag. No gimmicks, no
-                    unnecessary bulk.
+                    training tools are made from premium hardwoods, shaped
+                    around real finger ergonomics, and sized to go wherever you
+                    train — home wall, commercial gym, or the crag. No gimmicks,
+                    no unnecessary bulk.
                   </p>
                   <p>
-                    Alongside our equipment, we offer professional finger strength
-                    assessments based at The Climbing Hangar in London. Using
-                    precision force measurement and validated protocols, we
-                    measure Critical Force, Rate of Force Development, Maximum
-                    Voluntary Contraction, and Power Endurance — giving you the
-                    objective data to train smarter, not just harder.
+                    Alongside our equipment, we offer professional finger
+                    strength assessments based at The Climbing Hangar in London.
+                    Using precision force measurement and validated protocols,
+                    we measure Critical Force, Rate of Force Development,
+                    Maximum Voluntary Contraction, and Power Endurance — giving
+                    you the objective data to train smarter, not just harder.
                   </p>
                   <p>
-                    Whether you're shopping for your next training tool or looking
-                    to understand exactly where your finger strength sits, Astur
-                    Climbing is built around one goal: helping you climb stronger.
+                    Whether you're shopping for your next training tool or
+                    looking to understand exactly where your finger strength
+                    sits, Astur Climbing is built around one goal: helping you
+                    climb stronger.
                   </p>
                 </div>
               </div>
@@ -2187,8 +2162,14 @@
                   &copy; 2026&nbsp;Astur Climbing, All Rights Reserved
                 </p>
                 <div class="footer-social-links">
-              <a href="https://www.instagram.com/asturclimbing/" target="_blank" rel="noopener noreferrer" aria-label="Astur Climbing on Instagram"><i class="fab fa-instagram"></i></a>
-            </div>
+                  <a
+                    href="https://www.instagram.com/asturclimbing/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Astur Climbing on Instagram"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
               </div>
             </div>
           </div>

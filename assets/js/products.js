@@ -637,7 +637,7 @@ function renderProductPage() {
   document.head.appendChild(schema);
 
   const descHTML = (p.description || []).map((d, i) =>
-    `<p style="font-size:1.25rem;line-height:1.8;margin-bottom:${i === (p.description.length - 1) ? '30' : '20'}px;">${d}</p>`
+    `<p style="font-size:1.5rem;line-height:1.8;margin-bottom:${i === (p.description.length - 1) ? '30' : '20'}px;">${d}</p>`
   ).join('');
 
   const featuresHTML = (p.features || []).map(f =>
@@ -667,7 +667,7 @@ function renderProductPage() {
               <div class="product-page-title"><h1 class="font-alt" style="font-size:2.5rem;margin:0;text-transform:uppercase;">${p.name}</h1></div>
               <div class="product-header-spacer"></div>
             </div>
-            <p style="font-size:1.125rem;color:var(--sage-green);margin-bottom:40px;text-align:center;">${p.tagline}</p>
+            <p style="font-size:1.5rem;color:var(--sage-green);margin-bottom:40px;text-align:center;">${p.tagline}</p>
           </div>
         </div>
 
@@ -701,10 +701,10 @@ function renderProductPage() {
               <div class="product-detail-price" style="text-align:center;margin-bottom:12px;">£${p.price}</div>
               <a href="${p.buyUrl || 'https://asturclimbing.square.site'}" class="btn btn-primary btn-lg btn-round btn-add-to-cart" target="_blank" style="width:100%;display:block;margin:0 0 20px;">Buy Now</a>
               <div style="padding:15px;background:var(--summit-white);border-radius:4px;margin-bottom:15px;">
-                <p style="margin:0;font-size:0.95rem;"><i class="fas fa-truck" style="color:var(--sage-green);margin-right:10px;"></i><strong>Free UK Shipping</strong> on orders over £50</p>
+                <p style="margin:0;font-size:1.2rem;"><i class="fas fa-truck" style="color:var(--sage-green);margin-right:10px;"></i><strong>Free UK Shipping</strong> on orders over £50</p>
               </div>
               <div style="padding:15px;background:var(--summit-white);border-radius:4px;">
-                <p style="margin:0;font-size:0.95rem;"><i class="fas fa-shield-alt" style="color:var(--sage-green);margin-right:10px;"></i><strong>30-Day Guarantee</strong></p>
+                <p style="margin:0;font-size:1.2rem;"><i class="fas fa-shield-alt" style="color:var(--sage-green);margin-right:10px;"></i><strong>30-Day Guarantee</strong></p>
               </div>
             </div>
           </div>

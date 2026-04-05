@@ -4,33 +4,33 @@
  */
 
 /* Import Google Fonts - Orbitron, Roboto, and Audiowide */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Audiowide&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Audiowide&display=swap");
 
 :root {
   /* Font Families */
-  --font-display: 'Orbitron', sans-serif;
-  --font-body: 'Roboto', sans-serif;
-  --font-special: 'Audiowide', sans-serif;
-  
+  --font-display: "Orbitron", sans-serif;
+  --font-body: "Roboto", sans-serif;
+  --font-special: "Audiowide", sans-serif;
+
   /* Font Sizes - Print (converted to px/rem for web) */
-  --font-size-h1: 2rem;      /* 32pt = ~42.67px ≈ 2rem */
-  --font-size-h2: 1.125rem;  /* 18pt = ~24px ≈ 1.5rem */
+  --font-size-h1: 2rem; /* 32pt = ~42.67px ≈ 2rem */
+  --font-size-h2: 1.125rem; /* 18pt = ~24px ≈ 1.5rem */
   --font-size-h3: 0.6875rem; /* 11pt = ~14.67px ≈ 0.92rem */
   --font-size-body-large: 0.6875rem; /* 11pt */
   --font-size-body: 0.625rem; /* 10pt = ~13.33px ≈ 0.83rem */
   --font-size-caption: 0.5rem; /* 8pt = ~10.67px ≈ 0.67rem */
-  
+
   /* Font Sizes - Screen (optimized for digital) */
-  --font-size-h1-screen: 2.5rem;    /* 40px */
-  --font-size-h2-screen: 1.5rem;    /* 24px */
-  --font-size-h3-screen: 1.25rem;   /* 20px - increased more */
+  --font-size-h1-screen: 2.5rem; /* 40px */
+  --font-size-h2-screen: 1.5rem; /* 24px */
+  --font-size-h3-screen: 1.5rem; /* 24px */
   --font-size-body-large-screen: 1.375rem; /* 22px - increased more */
-  --font-size-body-screen: 1.375rem;     /* 22px - slightly bigger from 20px */
+  --font-size-body-screen: 1.625rem; /* 26px */
   --font-size-caption-screen: 1.125rem; /* 18px - slightly bigger from 17px */
-  
+
   /* Line Heights */
   --line-height-heading: 1.2;
-  --line-height-body: 1.8;  /* increased more for better readability */
+  --line-height-body: 1.8; /* increased more for better readability */
   --line-height-tight: 1.6; /* increased more */
 }
 
@@ -45,8 +45,18 @@ body {
 }
 
 /* Headings - Orbitron Display Font */
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   font-family: var(--font-display);
   font-weight: 700;
   line-height: var(--line-height-heading);
@@ -56,41 +66,48 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* H1 - Hero Titles */
-h1, .h1 {
+h1,
+.h1 {
   font-size: var(--font-size-h1-screen);
   text-transform: uppercase;
 }
 
 /* H2 - Section Headings */
-h2, .h2 {
+h2,
+.h2 {
   font-size: var(--font-size-h2-screen);
   text-transform: uppercase;
 }
 
 /* H3 - Subsection / Nav Labels */
-h3, .h3 {
+h3,
+.h3 {
   font-size: var(--font-size-h3-screen);
   text-transform: uppercase;
 }
 
 /* H4-H6 - Additional hierarchy */
-h4, .h4 {
+h4,
+.h4 {
   font-size: 1.125rem;
   text-transform: uppercase;
 }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: 1rem;
   text-transform: uppercase;
 }
 
-h6, .h6 {
+h6,
+.h6 {
   font-size: 0.875rem;
   text-transform: uppercase;
 }
 
 /* Body Text - Roboto */
-p, .body-text {
+p,
+.body-text {
   font-family: var(--font-body);
   font-size: var(--font-size-body-screen);
   line-height: var(--line-height-body);
@@ -98,19 +115,23 @@ p, .body-text {
 }
 
 /* Lead Paragraph */
-.lead, .body-large {
+.lead,
+.body-large {
   font-size: var(--font-size-body-large-screen);
   line-height: var(--line-height-body);
 }
 
 /* Captions */
-.caption, small {
+.caption,
+small {
   font-size: var(--font-size-caption-screen);
   line-height: var(--line-height-body);
 }
 
 /* Italics - Pull-quotes, Callouts */
-.italic, em, .pull-quote {
+.italic,
+em,
+.pull-quote {
   font-family: var(--font-body);
   font-style: italic;
   font-size: 0.9375rem; /* 15px */
@@ -145,7 +166,8 @@ button,
 }
 
 /* Lists */
-ul, ol {
+ul,
+ol {
   font-family: var(--font-body);
   line-height: var(--line-height-body);
 }
@@ -173,9 +195,9 @@ a:hover {
   :root {
     --font-size-h1-screen: 2rem;
     --font-size-h2-screen: 1.25rem;
-    --font-size-h3-screen: 0.875rem;
-    --font-size-body-large-screen: 1rem;
-    --font-size-body-screen: 0.9375rem;
+    --font-size-h3-screen: 1.375rem;
+    --font-size-body-large-screen: 1.3rem;
+    --font-size-body-screen: 1.75rem;
   }
 }
 
@@ -183,7 +205,8 @@ a:hover {
   :root {
     --font-size-h1-screen: 1.5rem;
     --font-size-h2-screen: 1.125rem;
-    --font-size-h3-screen: 0.8125rem;
+    --font-size-h3-screen: 1.25rem;
+    --font-size-body-screen: 1.6rem;
   }
 }
 
@@ -192,10 +215,16 @@ a:hover {
   body {
     font-size: 10pt;
   }
-  
-  h1 { font-size: 32pt; }
-  h2 { font-size: 18pt; }
-  h3 { font-size: 11pt; }
+
+  h1 {
+    font-size: 32pt;
+  }
+  h2 {
+    font-size: 18pt;
+  }
+  h3 {
+    font-size: 11pt;
+  }
 }
 
 /* Utility Classes */

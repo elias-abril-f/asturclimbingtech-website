@@ -18,7 +18,7 @@ const ASTUR_PRODUCTS = {
   'LC-D2010': {
     name: 'Classic Duo',
     tagline: 'Double-sided hardwood lifting edge — 20mm & 10mm',
-    url: '/shop/products/classic-duo.html',
+    url: '/shop/products/classic-duo/',
     image: '/assets/images/products/Classic/Classic2010/Square/actionInclineSquare.webp',
     price: '30',
     buyUrl: 'https://square.link/u/cxH5LWO2',
@@ -58,7 +58,7 @@ const ASTUR_PRODUCTS = {
   'LC-H20': {
     name: 'Classic Hybrid',
     tagline: '20mm wood + 3DP texture edge for high friction training',
-    url: '/shop/products/classic-hybrid.html',
+    url: '/shop/products/classic-hybrid/',
     image: '/assets/images/products/ergo-edges-compact-placeholder.jpg',
     price: '30',
     buyUrl: '',
@@ -93,7 +93,7 @@ const ASTUR_PRODUCTS = {
   'LE-VDE': {
     name: 'Ergo VDE',
     tagline: '20mm straight wood + 20mm variable depth 3DP edge',
-    url: '/shop/products/ergo-vde.html',
+    url: '/shop/products/ergo-vde/',
     image: '/assets/images/products/Ergo/VDE20/2020-1-square.webp',
     price: '30',
     buyUrl: 'https://square.link/u/4VcnAAwH',
@@ -133,7 +133,7 @@ const ASTUR_PRODUCTS = {
   'LE-S20': {
     name: 'Ergo Step',
     tagline: '20mm stepped hardwood edge for progressive loading',
-    url: '/shop/products/ergo-step.html',
+    url: '/shop/products/ergo-step/',
     image: '/assets/images/products/Ergo/Stepped/7OK4902_square.webp',
     price: '40',
     buyUrl: 'https://square.link/u/CbOyiWRU',
@@ -169,7 +169,7 @@ const ASTUR_PRODUCTS = {
   'LE-O20': {
     name: 'Ergo Offset',
     tagline: '20mm stepped + offset hardwood edge for technical training',
-    url: '/shop/products/ergo-offset.html',
+    url: '/shop/products/ergo-offset/',
     image: '/assets/images/products/Ergo/Offset/Black/7OK4884_square.webp',
     price: '40',
     buyUrl: 'https://square.link/u/EVqhd3uu',
@@ -209,7 +209,7 @@ const ASTUR_PRODUCTS = {
   'LF-BLK': {
     name: 'Forge Block',
     tagline: 'Metal backplate + hybrid edge system — modular',
-    url: '/shop/products/forge-block.html',
+    url: '/shop/products/forge-block/',
     image: '/assets/images/products/Forge/ActionWhite-square.webp',
     price: '40',
     buyUrl: 'https://square.link/u/QdwRAsri',
@@ -247,7 +247,7 @@ const ASTUR_PRODUCTS = {
   'FB-NMC': {
     name: 'Nomad Classic',
     tagline: '60cm carbon core fingerboard with magnetic Classic Duo blocks',
-    url: '/shop/products/nomad-classic.html',
+    url: '/shop/products/nomad-classic/',
     image: '/assets/images/products/hangboards/classicNomad/001.webp',
     price: '55 - £60',
     buyUrl: 'https://square.link/u/NJUScIvd',
@@ -284,7 +284,7 @@ const ASTUR_PRODUCTS = {
   'FB-NMF': {
     name: 'Nomad Forge',
     tagline: '60cm carbon core fingerboard with modular Forge blocks',
-    url: '/shop/products/nomad-forge.html',
+    url: '/shop/products/nomad-forge/',
     image: '/assets/images/products/ergo-edges-pro-placeholder.jpg',
     price: '55 - £60',
     buyUrl: 'https://square.link/u/afO06iUc',
@@ -322,7 +322,7 @@ const ASTUR_PRODUCTS = {
   'MT-THD': {
     name: 'Threshold',
     tagline: 'No-drill pull-up bar interface for doorway training',
-    url: '/shop/products/threshold.html',
+    url: '/shop/products/threshold/',
     image: '/assets/images/products/wall-mount-placeholder.jpg',
     price: '50',
     buyUrl: '',
@@ -358,7 +358,7 @@ description: [
   'AP-FRT': {
     name: 'Founders Ridge T-Shirt',
     tagline: 'Astur Climbing branded tee — 100% organic cotton',
-    url: '/shop/products/founders-ridge-tshirt.html',
+    url: '/shop/products/founders-ridge-tshirt/',
     image: '/assets/images/products/apparel&merch/tshirts/foundersRidge/BlackFrontBack.webp',
     price: '30',
     buyUrl: 'https://square.link/u/isoOzffu',
@@ -396,7 +396,7 @@ description: [
   'AC-SPL': {
     name: 'Pulley Splints',
     tagline: '3D printed finger support splints for pulley injury recovery',
-    url: '/shop/products/pulley-splints.html',
+    url: '/shop/products/pulley-splints/',
     image: '/assets/images/products/PSS/pss-3-square.webp',
     price: '15 -£20',
     buyUrl: 'https://square.link/u/NVo32vJT',

@@ -453,14 +453,74 @@ function renderProductPage() {
     return;
   }
 
-  // Update page meta
-  document.title = p.name + ' | Astur Climbing';
-  const metaDesc = document.querySelector('meta[name="description"]');
-  if (metaDesc) {
-    metaDesc.setAttribute('content', (p.description && p.description[0])
-      ? p.description[0].substring(0, 160)
-      : p.tagline);
+  // ── Page meta ──────────────────────────────────────────────────────────────
+  const BASE_URL = 'https://asturclimbing.com';
+  const pageUrl  = BASE_URL + p.url;
+  const imgUrl   = BASE_URL + p.image;
+  const descText = (p.description && p.description[0])
+    ? p.description[0].substring(0, 160)
+    : p.tagline;
+
+  document.title = p.name + ' | ' + p.category + ' | Astur Climbing';
+
+  // Helper: set an existing <meta> or create it
+  function setMeta(attr, attrVal, content) {
+    var el = document.querySelector('meta[' + attr + '="' + attrVal + '"]');
+    if (!el) {
+      el = document.createElement('meta');
+      el.setAttribute(attr, attrVal);
+      document.head.appendChild(el);
+    }
+    el.setAttribute('content', content);
   }
+
+  // Helper: set <link rel="..."> or create it
+  function setLink(rel, href) {
+    var el = document.querySelector('link[rel="' + rel + '"]');
+    if (!el) {
+      el = document.createElement('link');
+      el.setAttribute('rel', rel);
+      document.head.appendChild(el);
+    }
+    el.setAttribute('href', href);
+  }
+
+  setMeta('name', 'description', descText);
+  setLink('canonical', pageUrl);
+
+  // Open Graph
+  setMeta('property', 'og:title',       p.name + ' | Astur Climbing');
+  setMeta('property', 'og:description', descText);
+  setMeta('property', 'og:url',         pageUrl);
+  setMeta('property', 'og:type',        'product');
+  setMeta('property', 'og:image',       imgUrl);
+  setMeta('property', 'og:image:alt',   p.name + ' — ' + p.tagline);
+
+  // Twitter Card
+  setMeta('name', 'twitter:card',        'summary_large_image');
+  setMeta('name', 'twitter:title',       p.name + ' | Astur Climbing');
+  setMeta('name', 'twitter:description', descText);
+  setMeta('name', 'twitter:image',       imgUrl);
+
+  // Product JSON-LD schema
+  var schema = document.createElement('script');
+  schema.type = 'application/ld+json';
+  schema.text = JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    'name': p.name,
+    'description': p.tagline,
+    'image': imgUrl,
+    'brand': { '@type': 'Brand', 'name': 'Astur Climbing' },
+    'offers': {
+      '@type': 'Offer',
+      'priceCurrency': 'GBP',
+      'price': p.price,
+      'availability': 'https://schema.org/InStock',
+      'url': pageUrl
+    }
+  });
+  document.head.appendChild(schema);
 
   const descHTML = (p.description || []).map((d, i) =>
     `<p style="font-size:1.25rem;line-height:1.8;margin-bottom:${i === (p.description.length - 1) ? '30' : '20'}px;">${d}</p>`

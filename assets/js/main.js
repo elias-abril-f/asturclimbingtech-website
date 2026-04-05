@@ -102,8 +102,8 @@
             if (homeSection.length > 0) {
                 var homeSHeight = homeSection.height();
                 var topScroll = $(document).scrollTop();
-                if ((homeSection.hasClass('home-parallax')) && ($(scrollTopp).scrollTop() <= homeSHeight)) {
-                    homeSection.css('top', (topScroll * 0.55));
+                if (!mobileTest && (homeSection.hasClass('home-parallax')) && ($(scrollTopp).scrollTop() <= homeSHeight)) {
+                    homeSection.css('transform', 'translateY(' + (topScroll * 0.55) + 'px)');
                 }
                 if (homeSection.hasClass('home-fade') && ($(scrollTopp).scrollTop() <= homeSHeight)) {
                     var caption = $('.caption-content');

@@ -27,7 +27,7 @@ const ASTUR_PRODUCTS = {
      description: [
       'Build serious finger strength wherever you climb. The Astur Classic Duo is a compact wooden hangboard trainer designed for climbers who want real performance in a pocket-sized tool. With two precisely crafted wooden edges and an integrated jug, it\'s the ideal portable fingerboard for travel training, crag warmups, and focused hang workouts.',
       'Two straight oak edges cover the full spectrum from comfortable warmup hangs to high-intensity max-hangs. The 20mm edge is ideal for open-hand strength work and extended sessions, while the 10mm edge targets precise crimp training and high-intensity loading. Each edge features a 5mm roundover, more skin-friendly than a flat edge, while actively promoting proper finger engagement for better strength development.',
-      'With contact points machined from solid hardwood and finished to a smooth, consistent surface, the Classic Duo delivers the tactile feedback climbers expect from wood. Natural texture, reliable friction, and a feel that improves with use. At just 75g and small enough to live in your chalk bag, it\'s the finger training tool you\'ll actually take everywhere.',
+      'With contact points machined from solid hardwood and finished to a smooth, consistent surface, the Classic Duo delivers the tactile feedback climbers expect from wood. Natural texture, reliable friction, and a feel that improves with use.',
       'Why the Classic Duo — Most portable hangboards sacrifice feel for size. The Classic Duo doesn\'t. Two perfectly balanced wooden edges in a body small enough to live in your chalk bag — it\'s the finger training tool you\'ll actually take everywhere.',
     ],
     features: [

@@ -67,7 +67,7 @@ const ASTUR_PRODUCTS = {
     visible: false,
     description: [
       'The Astur Classic Hybrid pairs a smooth natural oak edge with a precision-textured 3D-printed edge, delivering two fundamentally different grip experiences in a single pocket-sized trainer. Train on the familiar warmth of wood, then step up to the nuanced friction of engineered rock texture. Same 20mm depth. Completely different feel.',
-      'The oak side delivers the warm, consistent contact climbers know and trust, ideal for warmup hangs, repeaters, and longer sessions where comfort matters. The textured side features an intricate micro-grain surface engineered to mimic the complex friction of natural rock. Not rough plastic, a deliberately designed contact surface with enough bite to challenge contact strength, refined enough to feel intentional under load.',
+      'The oak side delivers the warm, consistent contact climbers know and trust, ideal for warmup hangs, repeaters, and longer sessions where comfort matters. The textured side features an intricate micro-grain surface designed with enough bite to challenge contact strength, refined enough to feel intentional under load',
       'Why the Classic Hybrid: If you already own a single-surface portable edge, the Hybrid gives you something it cannot. Genuine variety in a single tool. Warm up on wood, then switch to texture to train contact strength and friction response in the same session.',
       'Disclaimer: Natural variations in grain, colour, and texture do not affect performance or durability.',
     ],

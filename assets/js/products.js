@@ -433,8 +433,7 @@ description: [
           { height: '19mm', width: '24mm', circumference: '68.5mm' },
         ],
       },
-      { label: 'Small Set', value: 'Sizes 10-14mm (5 splints)' },
-      { label: 'Large Set', value: 'Sizes 15-19mm (5 splints)' },
+      { label: 'Standard Set', value: 'Sizes 12-19mm (8 splints)' },
       { label: 'Custom Set', value: '5 splints in chosen sizes, specify in order notes' },
     ],
     gallery: [

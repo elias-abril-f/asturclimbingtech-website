@@ -288,6 +288,7 @@ const ASTUR_PRODUCTS = {
     image: '/assets/images/products/Ergo/VDE20/2020-1-square.webp',
     price: '55 - £60',
     buyUrl: '',
+    visible: false,
     category: 'Hangboard — Ergo',
     filterTags: ['hangboards', 'ergo'],
     badge: 'new',

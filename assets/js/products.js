@@ -255,8 +255,8 @@ const ASTUR_PRODUCTS = {
     filterTags: ['hangboards', 'classic'],
     badge: 'new',
     description: [
-      'The Astur Classic Nomad transforms two pocket-sized climbing edges into a complete, full-width portable fingerboard in seconds, using a precision carbon fibre connector with no tools required. At just 225g for the carbon version, it may be the lightest full-size fingerboard available anywhere.',
-      'Each edge offers a distinct grip surface: a 20mm curved ergonomic edge with a smooth radius for joint-friendly hangs, warmups, and rehab training, and a 20mm natural oak edge for the classic wooden hangboard feel. Use them independently for single-hand training or connect them with the carbon rod for a full-width two-hand fingerboard. The rounded back of each unit provides an integrated jug for pull-ups and recovery hangs.',
+      'The Astur Classic Nomad joins two Classic Duo blocks to a precision carbon fibre connector, creating a complete, full-width portable fingerboard in seconds with no tools required. At just 225g for the carbon version, it may be the lightest full-size fingerboard available anywhere.',
+      'Each Classic Duo block offers a distinct grip surface: a 20mm curved ergonomic edge with a smooth radius for joint-friendly hangs, warmups, and rehab training, and a 20mm natural oak edge for the classic wooden hangboard feel. Use them independently for single-hand training or connect them with the carbon rod for a full-width two-hand fingerboard. The rounded back of each unit provides an integrated jug for pull-ups and recovery hangs.',
       'Why the Classic Nomad: Traditional fingerboards are heavy, fixed, and require installation. The Classic Nomad gives you full hangboard functionality in a system light enough to travel in your carry-on. For climbers who train seriously and refuse to leave their hangboard at home.',
       'Disclaimer: Natural variations in grain, colour, and texture do not affect performance or durability.',
     ],
@@ -271,7 +271,7 @@ const ASTUR_PRODUCTS = {
       { label: 'Edge A', value: '20mm Curved — Ergonomic' },
       { label: 'Edge B', value: '20mm Straight — Natural Oak' },
       { label: 'Weight', value: '225g (carbon) / 255g (aluminium)' },
-      { label: 'Includes', value: '2 x reversible climbing edges, connector rod, setup cord' },
+      { label: 'Includes', value: '2 x Classic Duo blocks, connector rod, setup cord' },
     ],
     gallery: [
       { src: '/assets/images/products/hangboards/classicNomad/001.webp', alt: 'Nomad Classic' },
@@ -279,6 +279,43 @@ const ASTUR_PRODUCTS = {
       { src: '/assets/images/products/portable-hangboard-placeholder.jpg', alt: 'Nomad Classic in use' },
     ],
     relatedSkus: ['LC-D2010', 'LF-BLK', 'LE-VDE', 'AC-SPL'],
+  },
+
+  'FB-NME': {
+    name: 'Nomad Ergo',
+    tagline: '60cm carbon core fingerboard with magnetic Ergo VDE blocks',
+    url: '/shop/products/nomad-ergo/',
+    image: '/assets/images/products/Ergo/VDE20/2020-1-square.webp',
+    price: '55 - £60',
+    buyUrl: '',
+    category: 'Hangboard — Ergo',
+    filterTags: ['hangboards', 'ergo'],
+    badge: 'new',
+    description: [
+      'The Astur Nomad Ergo joins two Ergo VDE blocks to a precision carbon fibre connector, creating a complete, full-width portable fingerboard in seconds with no tools required. Each Ergo VDE contributes two distinct 20mm edges — a straight oak edge and a curved ergonomic edge — giving the Nomad Ergo four total training surfaces across a full hangboard width.',
+      'Straight edges train strength. Curved edges protect joints. With two Ergo VDE blocks connected side by side, the Nomad Ergo lets you push hard on the oak edges when fresh and shift to the ergonomic curve when managing load or easing into a session. Use the blocks independently for single-hand training or connect them for a symmetrical two-hand fingerboard anywhere you climb.',
+      'Why the Nomad Ergo: The Classic Nomad is built for oak traditionalists. The Nomad Ergo is built for climbers who train smarter — those who want to manage load on the fly without swapping tools. Two surfaces, one system, full hangboard width, and light enough to travel in your carry-on.',
+      'Disclaimer: Natural variations in grain, colour, and texture do not affect performance or durability.',
+    ],
+    features: [
+      { title: 'Two Ergo VDE blocks included', text: 'Each block provides a 20mm straight oak edge and a 20mm curved ergonomic edge — four training surfaces across a full hangboard width' },
+      { title: 'Load management built in', text: 'Switch between straight and curved edges to match how your fingers feel on any given day, without carrying extra tools' },
+      { title: 'Modular full-size design', text: 'Use blocks independently for single-hand training or connect with the carbon rod for a complete two-hand fingerboard. No tools required' },
+      { title: 'Integrated jug hold', text: 'Rounded back of each Ergo VDE for pull-ups, shoulder warmups, and recovery hangs' },
+    ],
+    specs: [
+      { label: 'SKU', value: 'FB-NME' },
+      { label: 'Edge A', value: '20mm Straight — Hardwood' },
+      { label: 'Edge B', value: '20mm Curved — Ergonomic' },
+      { label: 'Weight', value: '~225g (carbon connector) / ~255g (aluminium)' },
+      { label: 'Includes', value: '2 x Ergo VDE blocks, connector rod, setup cord' },
+    ],
+    gallery: [
+      { src: '/assets/images/products/Ergo/VDE20/2020-1-square.webp', alt: 'Nomad Ergo — front view' },
+      { src: '/assets/images/products/Ergo/VDE20/2020-2-square.webp', alt: 'Nomad Ergo — detail' },
+      { src: '/assets/images/products/Ergo/VDE20/2020-3-square.webp', alt: 'Nomad Ergo — in use' },
+    ],
+    relatedSkus: ['LE-VDE', 'FB-NMC', 'LC-D2010', 'AC-SPL'],
   },
 
   'FB-NMF': {

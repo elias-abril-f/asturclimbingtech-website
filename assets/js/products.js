@@ -21,7 +21,7 @@ const ASTUR_PRODUCTS = {
     url: '/shop/products/classic-duo/',
     image: '/assets/images/products/Classic/Classic2010/Square/actionInclineSquare.webp',
     price: '30',
-    buyUrl: 'https://square.link/u/cxH5LWO2',
+    buyUrl: 'https://square.link/u/kTr9Dosf',
     category: 'Lifting Block — Classic',
     filterTags: ['lifting-blocks', 'classic'],
      description: [

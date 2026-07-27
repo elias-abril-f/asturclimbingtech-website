@@ -254,7 +254,7 @@ const ASTUR_PRODUCTS = {
     name: 'Nomad Classic',
     tagline: '60cm carbon core fingerboard with magnetic Classic Duo blocks',
     url: '/shop/products/nomad-classic/',
-    image: '/assets/images/products/hangboards/classicNomad/001.webp',
+    image: '/assets/images/products/hangboards/classicNomad/000.webp',
     price: '55 - £60',
     buyUrl: 'https://square.link/u/NJUScIvd',
     category: 'Hangboard — Classic',
@@ -280,7 +280,7 @@ const ASTUR_PRODUCTS = {
       { label: 'Includes', value: '2 x Classic Duo blocks, connector rod, setup cord' },
     ],
     gallery: [
-      { src: '/assets/images/products/hangboards/classicNomad/001.webp', alt: 'Nomad Classic 001' },
+      { src: '/assets/images/products/hangboards/classicNomad/000.webp', alt: 'Nomad Classic 001' },
       { src: '/assets/images/products/hangboards/classicNomad/006.webp', alt: 'Nomad Classic 006' },
       { src: '/assets/images/products/hangboards/classicNomad/002.webp', alt: 'Nomad Classic 002' },
       { src: '/assets/images/products/hangboards/classicNomad/003.webp', alt: 'Nomad Classic 003' },

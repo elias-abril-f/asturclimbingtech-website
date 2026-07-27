@@ -215,7 +215,7 @@ const ASTUR_PRODUCTS = {
     name: 'Forge Block',
     tagline: 'Metal backplate + hybrid edge system — modular',
     url: '/shop/products/forge-block/',
-    image: '/assets/images/products/Forge/ActionWhite-square.webp',
+    image: '/assets/images/products/Forge/001.webp',
     price: '40',
     buyUrl: 'https://square.link/u/QdwRAsri',
     category: 'Lifting Block — Forge',
@@ -241,18 +241,17 @@ const ASTUR_PRODUCTS = {
       { label: 'Optional Upgrades', value: 'Precision metal edges, premium exotic hardwood edges' },
     ],
     gallery: [
-      { src: '/assets/images/products/Forge/FrontBlack-square.webp', alt: 'Forge Block black front' },
-      { src: '/assets/images/products/Forge/Black Action-square.webp', alt: 'Forge Block black in use' },
-      { src: '/assets/images/products/Forge/FrontWhite-square.webp', alt: 'Forge Block white front' },
-      { src: '/assets/images/products/Forge/ActionWhite-square.webp', alt: 'Forge Block white in use' },
-      { src: '/assets/images/products/Forge/back.webp', alt: 'Forge Block back' },
+      { src: '/assets/images/products/Forge/001.webp', alt: 'Forge Block black front' },
+      { src: '/assets/images/products/Forge/003.webp', alt: 'Forge Block black in use' },
+      { src: '/assets/images/products/Forge/004.webp', alt: 'Forge Block white front' },
+      { src: '/assets/images/products/Forge/002.webp', alt: 'Forge Block white in use' },
     ],
     relatedSkus: ['LE-O20', 'FB-NMC', 'LC-D2010', 'AC-SPL'],
   },
 
   'FB-NMC': {
     name: 'Nomad Classic',
-    tagline: '60cm carbon core fingerboard with magnetic Classic Duo blocks',
+    tagline: '40cm carbon core fingerboard with magnetic Classic Duo blocks',
     url: '/shop/products/nomad-classic/',
     image: '/assets/images/products/hangboards/classicNomad/000.webp',
     price: '55 - £60',
@@ -293,7 +292,7 @@ const ASTUR_PRODUCTS = {
 
   'FB-NME': {
     name: 'Nomad Ergo',
-    tagline: '60cm carbon core fingerboard with magnetic Ergo VDE blocks',
+    tagline: '40cm carbon core fingerboard with magnetic Ergo VDE blocks',
     url: '/shop/products/nomad-ergo/',
     image: '/assets/images/products/Ergo/VDE20/2020-1-square.webp',
     price: '55 - £60',
@@ -331,7 +330,7 @@ const ASTUR_PRODUCTS = {
 
   'FB-NMF': {
     name: 'Nomad Forge',
-    tagline: '60cm carbon core fingerboard with modular Forge blocks',
+    tagline: '40cm carbon core fingerboard with modular Forge blocks',
     url: '/shop/products/nomad-forge/',
     image: '/assets/images/products/hangboards/forgeNomad/001.png',
     price: '60 - £65',

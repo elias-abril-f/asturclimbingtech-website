@@ -57,7 +57,7 @@ const ASTUR_PRODUCTS = {
     name: 'Classic Hybrid',
     tagline: '20mm wood + 3DP texture edge for high friction training',
     url: '/shop/products/classic-hybrid/',
-    image: '/assets/images/products/Classic/ClassicHybrid/001.webp',
+    image: '/assets/images/products/Classic/ClassicHybrid/003.webp',
     price: '30',
     buyUrl: '',
     category: 'Lifting Block — Classic',

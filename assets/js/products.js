@@ -24,7 +24,7 @@ const ASTUR_PRODUCTS = {
     buyUrl: 'https://square.link/u/kTr9Dosf',
     category: 'Lifting Block — Classic',
     filterTags: ['lifting-blocks', 'classic'],
-     description: [
+    description: [
       'Build serious finger strength wherever you climb. The Astur Classic Duo is a compact wooden hangboard trainer designed for climbers who want real performance in a pocket-sized tool. With two precisely crafted wooden edges and an integrated jug, it\'s the ideal portable fingerboard for travel training, crag warmups, and focused hang workouts.',
       'Two straight oak edges cover the full spectrum from comfortable warmup hangs to high-intensity max-hangs. The 20mm edge is ideal for open-hand strength work and extended sessions, while the 10mm edge targets precise crimp training and high-intensity loading. Each edge features a 5mm roundover, more skin-friendly than a flat edge, while actively promoting proper finger engagement for better strength development.',
       'With contact points machined from solid hardwood and finished to a smooth, consistent surface, the Classic Duo delivers the tactile feedback climbers expect from wood. Natural texture, reliable friction, and a feel that improves with use.',
@@ -57,7 +57,7 @@ const ASTUR_PRODUCTS = {
     name: 'Classic Hybrid',
     tagline: '20mm wood + 3DP texture edge for high friction training',
     url: '/shop/products/classic-hybrid/',
-    image: '/assets/images/products/Classic/ClassicHybrid/003.webp',
+    image: '/assets/images/products/Classic/ClassicHybrid/001.webp',
     price: '30',
     buyUrl: 'https://square.link/u/PeIPXNNf',
     category: 'Lifting Block — Classic',
@@ -79,15 +79,15 @@ const ASTUR_PRODUCTS = {
       { label: 'SKU', value: 'LC-H20' },
       { label: 'Edge A', value: '20mm Straight — Hardwood' },
       { label: 'Edge B', value: '20mm Textured — 3D Printed' },
-            { label: 'Dimensions', value: '25 × 44 × 120 mm' },
+      { label: 'Dimensions', value: '25 × 44 × 120 mm' },
       { label: 'Weight', value: '75g' },
     ],
     gallery: [
       { src: '/assets/images/products/Classic/ClassicHybrid/001.webp', alt: 'Classic Hybrid 1' },
+      { src: '/assets/images/products/Classic/ClassicHybrid/002.webp', alt: 'Classic Hybrid 2' },
       { src: '/assets/images/products/Classic/ClassicHybrid/003.webp', alt: 'Classic Hybrid 3' },
       { src: '/assets/images/products/Classic/ClassicHybrid/004.webp', alt: 'Classic Hybrid 4' },
       { src: '/assets/images/products/Classic/ClassicHybrid/005.webp', alt: 'Classic Hybrid 5' },
-      { src: '/assets/images/products/Classic/ClassicHybrid/002.webp', alt: 'Classic Hybrid 2' },
     ],
     relatedSkus: ['LC-D2010', 'LE-VDE', 'FB-NMC', 'AC-SPL'],
   },
@@ -220,7 +220,7 @@ const ASTUR_PRODUCTS = {
     buyUrl: 'https://square.link/u/QdwRAsri',
     category: 'Lifting Block — Forge',
     filterTags: ['lifting-blocks', 'forge'],
-   description: [
+    description: [
       'The Astur Forge Block is a precision-engineered modular hangboard unit built around a machined metal backplate and interchangeable wooden contact edges, giving you the rigidity and consistent feel of a fixed board in a compact, portable format. Use it as a single-hand edge, or connect two units with a carbon rod to build a full two-hand portable fingerboard.',
       'The precision-machined metal backplate eliminates the flex found in plastic and composite boards, delivering a rock-solid feel under load session after session. The 20mm edge features a 3D-printed internal structure with a real wood contact surface, combining the skin-friendly feel of wood with the dimensional accuracy of modern manufacturing. Available in multiple colours, every edge shares identical geometry and performance.',
       'Why the Forge Block: Most portable edges are fixed tools. The Forge Block is a system, one that grows with your training, adapts to your goals, and never asks you to compromise between portability and performance.',
@@ -379,7 +379,7 @@ const ASTUR_PRODUCTS = {
     category: 'Mount System',
     filterTags: ['hangboards'],
     visible: false,
-description: [
+    description: [
       'The Astur Threshold mounts directly onto your existing doorway pull-up bar, turning it into a fixed, stable fingerboard station without drilling a single hole. Two precision training blocks lock onto the bar using an engineered spacer system, eliminating the swing, instability, and frustration of hanging blocks while keeping your walls completely intact.',
       'This is the problem the Threshold was built to solve. Hanging fingerboards and suspended blocks move under load, making it impossible to train with the consistency a fixed hangboard provides. The Threshold locks to the bar and eliminates movement entirely, giving you a contact feel closer to a wall-mounted hangboard than any other no-drill solution.',
       'Why the Threshold: Two problems with home fingerboard setups, drilling and instability. The Threshold solves both at once. If you own a pull-up bar, you are one step away from a complete finger training station.',
@@ -415,7 +415,7 @@ description: [
     category: 'Apparel',
     filterTags: ['apparel'],
     badge: 'new',
-  description: [
+    description: [
       'The Founders Ridge T-Shirt is built around the silhouette of Picu Urriellu, the defining peak of the Picos de Europa and the mountain at the heart of the Astur Climbing identity. The original Astur logo, reworked into a clean mountain graphic that stands on its own. Simple geometry. Real meaning.',
       'This is not branded merchandise. It is a piece of where Astur Climbing began, made for climbers who want to wear the brand with intention rather than just a logo.',
       'Why the Founders Ridge: Most climbing brand tees lead with the logo. This one leads with the mountain.',
@@ -440,7 +440,7 @@ description: [
       { src: '/assets/images/products/apparel-merch/tshirts/foundersRidge/lightGreen.webp', alt: 'Founders Ridge T-Shirt — Light Green' },
       { src: '/assets/images/products/apparel-merch/tshirts/foundersRidge/pink.webp', alt: 'Founders Ridge T-Shirt — Pink' },
     ],
-    relatedSkus: ['AC-SPL', 'LC-D2010', 'LE-VDE','FB-NMC'],
+    relatedSkus: ['AC-SPL', 'LC-D2010', 'LE-VDE', 'FB-NMC'],
   },
 
   'AC-SPL': {
@@ -591,8 +591,8 @@ function renderProductPage() {
 
   // ── Page meta ──────────────────────────────────────────────────────────────
   const BASE_URL = 'https://asturclimbing.com';
-  const pageUrl  = BASE_URL + p.url;
-  const imgUrl   = BASE_URL + p.image;
+  const pageUrl = BASE_URL + p.url;
+  const imgUrl = BASE_URL + p.image;
   const descText = (p.description && p.description[0])
     ? p.description[0].substring(0, 160)
     : p.tagline;
@@ -625,18 +625,18 @@ function renderProductPage() {
   setLink('canonical', pageUrl);
 
   // Open Graph
-  setMeta('property', 'og:title',       p.name + ' | Astur Climbing');
+  setMeta('property', 'og:title', p.name + ' | Astur Climbing');
   setMeta('property', 'og:description', descText);
-  setMeta('property', 'og:url',         pageUrl);
-  setMeta('property', 'og:type',        'product');
-  setMeta('property', 'og:image',       imgUrl);
-  setMeta('property', 'og:image:alt',   p.name + ' — ' + p.tagline);
+  setMeta('property', 'og:url', pageUrl);
+  setMeta('property', 'og:type', 'product');
+  setMeta('property', 'og:image', imgUrl);
+  setMeta('property', 'og:image:alt', p.name + ' — ' + p.tagline);
 
   // Twitter Card
-  setMeta('name', 'twitter:card',        'summary_large_image');
-  setMeta('name', 'twitter:title',       p.name + ' | Astur Climbing');
+  setMeta('name', 'twitter:card', 'summary_large_image');
+  setMeta('name', 'twitter:title', p.name + ' | Astur Climbing');
   setMeta('name', 'twitter:description', descText);
-  setMeta('name', 'twitter:image',       imgUrl);
+  setMeta('name', 'twitter:image', imgUrl);
 
   // Product + BreadcrumbList JSON-LD schema
   var schema = document.createElement('script');
@@ -651,9 +651,9 @@ function renderProductPage() {
         'description': (p.description && p.description[0]) ? p.description[0] : p.tagline,
         'image': imgUrl,
         'brand': { '@type': 'Brand', 'name': 'Astur Climbing' },
-        'offers': (function() {
+        'offers': (function () {
           var priceStr = String(p.price);
-          var parts = priceStr.replace(/£/g, '').split('-').map(function(s) { return parseFloat(s.trim()); });
+          var parts = priceStr.replace(/£/g, '').split('-').map(function (s) { return parseFloat(s.trim()); });
           if (parts.length === 2 && !isNaN(parts[0]) && !isNaN(parts[1])) {
             return {
               '@type': 'AggregateOffer',
@@ -676,9 +676,9 @@ function renderProductPage() {
       {
         '@type': 'BreadcrumbList',
         'itemListElement': [
-          { '@type': 'ListItem', 'position': 1, 'name': 'Home',  'item': BASE_URL + '/' },
-          { '@type': 'ListItem', 'position': 2, 'name': 'Shop',  'item': BASE_URL + '/shop/' },
-          { '@type': 'ListItem', 'position': 3, 'name': p.name,  'item': pageUrl }
+          { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': BASE_URL + '/' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Shop', 'item': BASE_URL + '/shop/' },
+          { '@type': 'ListItem', 'position': 3, 'name': p.name, 'item': pageUrl }
         ]
       }
     ]

@@ -59,7 +59,7 @@ const ASTUR_PRODUCTS = {
     url: '/shop/products/classic-hybrid/',
     image: '/assets/images/products/Classic/ClassicHybrid/003.webp',
     price: '30',
-    buyUrl: '',
+    buyUrl: 'https://square.link/u/PeIPXNNf',
     category: 'Lifting Block — Classic',
     filterTags: ['lifting-blocks', 'classic'],
     visible: true,

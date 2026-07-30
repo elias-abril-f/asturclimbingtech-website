@@ -24,6 +24,7 @@ const ASTUR_PRODUCTS = {
     buyUrl: 'https://square.link/u/kTr9Dosf',
     category: 'Lifting Block — Classic',
     filterTags: ['lifting-blocks', 'classic'],
+    badge: 'popular',
     description: [
       'Build serious finger strength wherever you climb. The Astur Classic Duo is a compact wooden hangboard trainer designed for climbers who want real performance in a pocket-sized tool. With two precisely crafted wooden edges and an integrated jug, it\'s the ideal portable fingerboard for travel training, crag warmups, and focused hang workouts.',
       'Two straight oak edges cover the full spectrum from comfortable warmup hangs to high-intensity max-hangs. The 20mm edge is ideal for open-hand strength work and extended sessions, while the 10mm edge targets precise crimp training and high-intensity loading. Each edge features a 5mm roundover, more skin-friendly than a flat edge, while actively promoting proper finger engagement for better strength development.',

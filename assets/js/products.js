@@ -123,8 +123,13 @@ const ASTUR_PRODUCTS = {
     ],
     gallery: [
       { src: '/assets/images/products/Classic/ClassicNano/001.webp', alt: 'Classic Nano 1' },
+      { src: '/assets/images/products/Classic/ClassicNano/002.webp', alt: 'Classic Nano 2' },
+      { src: '/assets/images/products/Classic/ClassicNano/003.webp', alt: 'Classic Nano 3' },
+      { src: '/assets/images/products/Classic/ClassicNano/004.webp', alt: 'Classic Nano 4' },
+      { src: '/assets/images/products/Classic/ClassicNano/005.webp', alt: 'Classic Nano 5' },
+      { src: '/assets/images/products/Classic/ClassicNano/006.webp', alt: 'Classic Nano 6' },
     ],
-    relatedSkus: ['LC-D2010', 'LC-H20'],
+    relatedSkus: ['LC-D2010', 'LC-H20', 'FB-NMC', 'FB-NMF'],
   },
   
   'LE-VDE': {

@@ -98,7 +98,7 @@ const ASTUR_PRODUCTS = {
     tagline: 'The smallest portable edge trainer in the Astur range',
     url: '/shop/products/classic-nano/',
     image: '/assets/images/products/Classic/ClassicNano/001.webp',
-    price: '',
+    price: '25',
     buyUrl: '',
     category: 'Lifting Block — Classic',
     filterTags: ['lifting-blocks', 'classic'],

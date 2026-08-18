@@ -93,6 +93,40 @@ const ASTUR_PRODUCTS = {
     relatedSkus: ['LC-D2010', 'LE-VDE', 'FB-NMC', 'AC-SPL'],
   },
 
+  'LC-N20': {
+    name: 'Classic Nano',
+    tagline: 'The smallest portable edge trainer in the Astur range',
+    url: '/shop/products/classic-nano/',
+    image: '/assets/images/products/Classic/ClassicNano/001.webp',
+    price: '',
+    buyUrl: '',
+    category: 'Lifting Block — Classic',
+    filterTags: ['lifting-blocks', 'classic'],
+    visible: true,
+    description: [
+      'The smallest tool in the Astur range. Built for climbers who want zero excuses for skipping a session, the Astur Classic Nano strips portable finger training down to the essentials: one precision oak edge, under 30g, small enough to disappear in a pocket.',
+      'Whether it\'s a five-minute session between routes, a warmup before a trip to the wall, or the one piece of kit you never leave behind, the Classic Nano is there when a full setup isn\'t.',
+      'Why the Classic Nano: Every other portable edge asks you to carry a compromise. The Nano doesn\'t, it just asks you to carry less. One edge, one job, done properly, in the smallest possible footprint.',
+      'Disclaimer: Natural variations in grain, colour, and texture do not affect performance or durability.',
+    ],
+    features: [
+      { title: 'Single wooden edge', text: '20mm oak edge with 5mm roundover, skin-friendly and consistent' },
+      { title: 'Smallest tool Astur makes', text: 'Under 30g, 25 × 30 × 106mm — fits a coin pocket or keyring' },
+      { title: 'Natural oak surface', text: 'Same skin-friendly, natural-friction oak used across the range' },
+      { title: 'Ready to hang anywhere', text: 'Load-tested cord rated to 150kg, no tools required' },
+    ],
+    specs: [
+      { label: 'SKU', value: 'LC-N20' },
+      { label: 'Edge', value: '20mm Straight — Hardwood' },
+      { label: 'Dimensions', value: '25 × 30 × 106 mm' },
+      { label: 'Weight', value: 'Under 30g' },
+    ],
+    gallery: [
+      { src: '/assets/images/products/Classic/ClassicNano/001.webp', alt: 'Classic Nano 1' },
+    ],
+    relatedSkus: ['LC-D2010', 'LC-H20'],
+  },
+  
   'LE-VDE': {
     name: 'Ergo VDE',
     tagline: '20mm straight wood + 20mm variable depth 3DP edge',

@@ -99,7 +99,7 @@ const ASTUR_PRODUCTS = {
     url: '/shop/products/classic-nano/',
     image: '/assets/images/products/Classic/ClassicNano/001.webp',
     price: '25',
-    buyUrl: '',
+    buyUrl: 'https://square.link/u/rQmOibvx',
     category: 'Lifting Block — Classic',
     filterTags: ['lifting-blocks', 'classic'],
     visible: true,
@@ -131,7 +131,7 @@ const ASTUR_PRODUCTS = {
     ],
     relatedSkus: ['LC-D2010', 'LC-H20', 'FB-NMC', 'FB-NMF'],
   },
-  
+
   'LE-VDE': {
     name: 'Ergo VDE',
     tagline: '20mm straight wood + 20mm variable depth 3DP edge',
